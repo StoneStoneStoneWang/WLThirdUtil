@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "WLThirdUtil"
-s.version      = "0.0.1"
+s.version      = "0.0.2"
 s.summary      = "A Lib For 三方的封装."
 s.description  = <<-DESC
 WLThirdUtil一个对三方的封装的封装
@@ -24,28 +24,33 @@ s.frameworks = 'UIKit', 'Foundation'
 
 s.source = { :git => "https://github.com/StoneStoneStoneWang/WLThirdUtil.git", :tag => "#{s.version}" }
 
-s.subspec 'JPush' do |hka|
-hka.source_files = "Code/JPush/*.{h,m}"
-hka.dependency 'JPush'
+   s.subspec 'JPush' do |jpush|
+   jpush.source_files = "Code/JPush/*.{h,m}"
+   jpush.dependency 'JPush'
 
-end
+   end
 
-s.subspec 'UM' do |hka|
+   s.subspec 'UM' do |um|
 
-hka.source_files = 'Code/UM/**/*.{h,m}'
-hka.dependency 'UMCPush'
-hka.dependency 'UMCAnalytics'
-hka.dependency 'UMCSecurityPlugins'
-hka.dependency 'UMCShare/Social/WeChat'
-hka.dependency 'UMCShare/Social/QQ'
-end
+   um.source_files = 'Code/UM/**/*.{h,m}'
+   um.dependency 'UMCPush'
+   um.dependency 'UMCAnalytics'
+   um.dependency 'UMCSecurityPlugins'
+   um.dependency 'UMCShare/Social/WeChat'
+   um.dependency 'UMCShare/Social/QQ'
+   end
 
-s.subspec 'Hud' do |hka|
+   s.subspec 'Hud' do |hud|
 
-hka.source_files = 'Code/Hud/*.{h,m}'
-hka.dependency 'SVProgressHUD'
+   hud.source_files = 'Code/Hud/*.{h,m}'
+   hud.dependency 'SVProgressHUD'
 
-end
+   end
+   s.subspec 'Cache' do |cache|
+
+   cache.dependency 'YYCache'
+
+   end
 
 end
 
