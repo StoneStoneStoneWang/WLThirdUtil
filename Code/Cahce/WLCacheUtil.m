@@ -38,7 +38,7 @@ static WLCacheUtil *manager = nil;
     if ([self checkEnv]) [self.cache setObject:obj forKey:key];
 }
 
-- (id<NSCoding>)fetchObj:(NSString *)key {
+- (nullable id<NSCoding>)fetchObj:(NSString *)key {
     
     if ([self checkEnv]) return [self.cache objectForKey:key];
     

@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)saveObj:(id<NSCoding>)obj withKey:(NSString *)key;
 
-- (id<NSCoding>)fetchObj:(NSString *)key;
+- (nullable id <NSCoding>)fetchObj:(NSString *)key;
 
 - (BOOL)checkEnv;
 
