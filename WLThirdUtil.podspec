@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "WLThirdUtil"
-s.version      = "0.0.2"
+s.version      = "0.0.3"
 s.summary      = "A Lib For 三方的封装."
 s.description  = <<-DESC
 WLThirdUtil一个对三方的封装的封装
@@ -47,7 +47,7 @@ s.source = { :git => "https://github.com/StoneStoneStoneWang/WLThirdUtil.git", :
 
    end
    s.subspec 'Cache' do |cache|
-
+   cache.source_files = 'Code/Cahce/*.{h,m}'
    cache.dependency 'YYCache'
 
    end

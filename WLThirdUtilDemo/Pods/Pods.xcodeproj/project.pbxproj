@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -16,6 +16,7 @@
 				DD5941773CD99F0A6AF95F1F5334F71F /* PBXTargetDependency */,
 			);
 			name = UMCShare;
+			productName = UMCShare;
 		};
 		5FB6AB0A09E7A2F2BE11AD6BAEFD9AED /* JPush */ = {
 			isa = PBXAggregateTarget;
@@ -26,6 +27,7 @@
 				61A7D75865C20272D53BC19298DA2A93 /* PBXTargetDependency */,
 			);
 			name = JPush;
+			productName = JPush;
 		};
 		6F6B630FA5213AB083E7CEF1F986FE44 /* UMCCommon */ = {
 			isa = PBXAggregateTarget;
@@ -35,6 +37,7 @@
 			dependencies = (
 			);
 			name = UMCCommon;
+			productName = UMCCommon;
 		};
 		8B5BB4D9C85FBB3B774B6C624239821A /* UMCSecurityPlugins */ = {
 			isa = PBXAggregateTarget;
@@ -44,6 +47,7 @@
 			dependencies = (
 			);
 			name = UMCSecurityPlugins;
+			productName = UMCSecurityPlugins;
 		};
 		8FBAE66FA6352AB9D5094143816D813B /* UMCPush */ = {
 			isa = PBXAggregateTarget;
@@ -54,6 +58,7 @@
 				162DDFA37DF770013E4805BDD932B37C /* PBXTargetDependency */,
 			);
 			name = UMCPush;
+			productName = UMCPush;
 		};
 		D504B99928659EA67A1C3A9E981EB8FF /* JCore */ = {
 			isa = PBXAggregateTarget;
@@ -63,6 +68,7 @@
 			dependencies = (
 			);
 			name = JCore;
+			productName = JCore;
 		};
 		FD2E8643412994484A50DA7D3BFB1EFC /* UMCAnalytics */ = {
 			isa = PBXAggregateTarget;
@@ -73,30 +79,55 @@
 				D6F37A14E44787E5115BD54D5A2580C5 /* PBXTargetDependency */,
 			);
 			name = UMCAnalytics;
+			productName = UMCAnalytics;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		26975FB185A8F0A8E65D48D7AAC3A173 /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 398CC7FAA668EE6F864DBC9989C5C428 /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		64B819746405A7B28F51FC2F44DB1665 /* Pods-WLThirdUtilDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C8CEACE7A3EED60ADE7C486259A27A /* Pods-WLThirdUtilDemo-dummy.m */; };
-		7BB08CA8CF3E06599C7AC6E1D5F8B6E7 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC9C1A5CC05AE37EDDAAFAE808163E0 /* SVProgressHUD.m */; };
-		8E6D3FCB4DE887E34FF54040461D3E39 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 901A33E5C5D66B1F30A3C7C8971E3D17 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9126848777F67CFB665C95238234CCAF /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 486648AACD393CC9869554823D36BB46 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		AA9C7EF7D4A67A0BAF1A51870E054899 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = FBF11315FC1455F58830F1E55C9A903A /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B07D76F0A222AE42E6BC99D78BA7CFC6 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1446D6902558D786AD550B4268DF22AC /* SVProgressAnimatedView.m */; };
-		C152DE73D5E495C27CC7D611DC03E14B /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D440D13532E255DD2A5A84B21E9D88 /* SVProgressHUD-dummy.m */; };
-		CD1183FE917EBEF08280EB3E83C8A8DF /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7B34BDFA8293C12A1B4126580A0BEF /* SVIndefiniteAnimatedView.m */; };
-		DA69A890B74874A824F7B40A1DEB2AC5 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E1BB59F19697E3A9C0838E218DF039 /* SVRadialGradientLayer.m */; };
-		E7ADEAD0D21186ADCD81F832A3886599 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B9F4595541D3574E19F3C5377F15A4 /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		00FC127EF747A6378C68FBDDAD6644D6 /* YYCache-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E721F137C091049AE19E2692F2777C63 /* YYCache-dummy.m */; };
+		18E6581BAB38FB7D86012A65616F2820 /* YYKVStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DAA8F584D3D182602E4890859E129E0 /* YYKVStorage.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		26975FB185A8F0A8E65D48D7AAC3A173 /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F621C1B50112A56E4FB1FA1FD28D3738 /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		54DB7F0E70684065A120B251A470E400 /* Pods-WLThirdUtilDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C8CEACE7A3EED60ADE7C486259A27A /* Pods-WLThirdUtilDemo-dummy.m */; };
+		66E91E4D69A9998ACDB5CE98C56ABF12 /* YYDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = FD6778F73A17CB1A4F9AF008BF253DFF /* YYDiskCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7BB08CA8CF3E06599C7AC6E1D5F8B6E7 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0AB2EF79225278A566D5EB798F0CF5 /* SVProgressHUD.m */; };
+		84EF6444BA188074C9597734F9D7D6B7 /* YYCache-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A46DDA723E49961DB8E32D29D97B5C /* YYCache-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8E6D3FCB4DE887E34FF54040461D3E39 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = B1DBABC6D19BFBC494566DF20E51463A /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9126848777F67CFB665C95238234CCAF /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 334E1CD362AE55BC4AFA32CF374BBD97 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A4974CD2576F42EE594C58847E119954 /* YYCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B9E53AEDE3B0605865F744452D1EE6 /* YYCache.m */; };
+		A6CB12A1C42D2D204E8F18459099FE0C /* YYCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 52ED08BE8B3D0282D4F850A707D2B737 /* YYCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AA9C7EF7D4A67A0BAF1A51870E054899 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 79BC5A5407B7AABA312BB65A16C6A88A /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B07D76F0A222AE42E6BC99D78BA7CFC6 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2939A6DD6EE47F8DEC472993FCDC121 /* SVProgressAnimatedView.m */; };
+		B83BDF7C061C3A10C52C6BA35FA4C39D /* YYMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B77D81C3AC6A095C8E49F1332F06F1C /* YYMemoryCache.m */; };
+		C14319CE0B0DBCAF638783BCFE39AFE6 /* YYKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = A49378A61EAEC5C5A4656197E26F2F2A /* YYKVStorage.m */; };
+		C152DE73D5E495C27CC7D611DC03E14B /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3BEEC846B048FC2450A39DC95B5DFB /* SVProgressHUD-dummy.m */; };
+		C9ED22B68E1BB370235EE15CDE2C1F6D /* YYMemoryCache.h in Headers */ = {isa = PBXBuildFile; fileRef = E8BC6C104F45F9FB4F12FF516319A6DC /* YYMemoryCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CD1183FE917EBEF08280EB3E83C8A8DF /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = C526612A5B135B76B9CB104804858D17 /* SVIndefiniteAnimatedView.m */; };
+		DA69A890B74874A824F7B40A1DEB2AC5 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A725922D7E008EEF474340248248A9B0 /* SVRadialGradientLayer.m */; };
+		E7ADEAD0D21186ADCD81F832A3886599 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7487EA9818C0FE53D72CE2A75D3D2D82 /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F6688D732A24BA192B8D2C8F63A68157 /* YYDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E207C0788E8E89C7B602A25608E242B /* YYDiskCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		02A4ED06801B58B8D2923834BB848C85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D504B99928659EA67A1C3A9E981EB8FF;
+			remoteInfo = JCore;
+		};
 		06EFA5B08CFEF9FF388D3151ED78E44E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6F6B630FA5213AB083E7CEF1F986FE44;
 			remoteInfo = UMCCommon;
+		};
+		0CBAF7869945B884C294F497E3D9426B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFDAE6EB02F58B9A37CADCF439AE6082;
+			remoteInfo = YYCache;
 		};
 		0D464E25945765A42BD9795662F99D00 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -105,19 +136,12 @@
 			remoteGlobalIDString = 6F6B630FA5213AB083E7CEF1F986FE44;
 			remoteInfo = UMCCommon;
 		};
-		2C5E3E61715B31EAB40B6CBE4AD46A57 /* PBXContainerItemProxy */ = {
+		2701F8D1FEC9FC45275033B7C9DA3EB3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6F6B630FA5213AB083E7CEF1F986FE44;
-			remoteInfo = UMCCommon;
-		};
-		352A0AE6FD1019E9CB4EA222D80B1DE4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1C8D67D8B72D6BA42CCEDB648537A340;
-			remoteInfo = SVProgressHUD;
+			remoteGlobalIDString = FD2E8643412994484A50DA7D3BFB1EFC;
+			remoteInfo = UMCAnalytics;
 		};
 		53023D3FFE4E5A2884C7F8871827AE08 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -133,106 +157,120 @@
 			remoteGlobalIDString = D504B99928659EA67A1C3A9E981EB8FF;
 			remoteInfo = JCore;
 		};
-		6E897E4E62330C2C1794FCD2F7C6F993 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8FBAE66FA6352AB9D5094143816D813B;
-			remoteInfo = UMCPush;
-		};
-		A158A93E6FC3B03803CD18FCFC0EE56B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FD2E8643412994484A50DA7D3BFB1EFC;
-			remoteInfo = UMCAnalytics;
-		};
-		ADC58A66EE4D9730CF6990887D8DA211 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D504B99928659EA67A1C3A9E981EB8FF;
-			remoteInfo = JCore;
-		};
-		AF086C75ED316A18D54BE095BA04C618 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 08797F46251C64100F721EEF64AAD344;
-			remoteInfo = UMCShare;
-		};
-		BCA74D4965CF1CC585C94F126D4233CA /* PBXContainerItemProxy */ = {
+		82A4BE3DCC7A2FC4F2904572382AA9A7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5FB6AB0A09E7A2F2BE11AD6BAEFD9AED;
 			remoteInfo = JPush;
 		};
-		FED58E60630461D8CC7D4C844EB3FF17 /* PBXContainerItemProxy */ = {
+		90863733031A836AD605BA38A4C2FA76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FBAE66FA6352AB9D5094143816D813B;
+			remoteInfo = UMCPush;
+		};
+		B47C233DE3F20B5CD7002E397BF9E141 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F6B630FA5213AB083E7CEF1F986FE44;
+			remoteInfo = UMCCommon;
+		};
+		D3447CF92A19029B7832581A65782A17 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8B5BB4D9C85FBB3B774B6C624239821A;
 			remoteInfo = UMCSecurityPlugins;
 		};
+		E73977ACC7C2C4BB3405342A83FF77A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C8D67D8B72D6BA42CCEDB648537A340;
+			remoteInfo = SVProgressHUD;
+		};
+		EF54EB28BE33744FA8557C23266BEF02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08797F46251C64100F721EEF64AAD344;
+			remoteInfo = UMCShare;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		064D4F27F53E8D70A0D9901EFD488A44 /* JCore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JCore.xcconfig; sourceTree = "<group>"; };
-		0A408A7B87741B0E4D50D9F0FB1E5E05 /* UMPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMPush.framework; sourceTree = "<group>"; };
-		0AE5E8E777337AE3A5A9ABA351BB519C /* libjcore-ios-1.2.6.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-1.2.6.a"; sourceTree = "<group>"; };
-		0B0DBEE062054E1399DC963CC2A01E61 /* UMCAnalytics.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UMCAnalytics.xcconfig; sourceTree = "<group>"; };
-		0D9987C8C9EE3AFDB68A08DB2AEA8E57 /* JPUSHService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
-		1446D6902558D786AD550B4268DF22AC /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
-		1B33B8A4D12501BBEA1DAD9EF1FE1D13 /* libWeChatSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = UMShare/SocialLibraries/WeChat/WechatSDK/libWeChatSDK.a; sourceTree = "<group>"; };
-		1BD371F629B7EB8D761DFA04F7857640 /* libPods-WLThirdUtilDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-WLThirdUtilDemo.a"; path = "libPods-WLThirdUtilDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		22A5AABEC5FE85CDD0172A0166B0938E /* UMCSecurityPlugins.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UMCSecurityPlugins.xcconfig; sourceTree = "<group>"; };
+		01C904EBED5E8C593E22B2D579313E7B /* libSocialQQ.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libSocialQQ.a; path = UMShare/SocialLibraries/QQ/libSocialQQ.a; sourceTree = "<group>"; };
+		039DFA386C50C6735FF46B4E54A8CF7D /* UMCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMCommon.framework; sourceTree = "<group>"; };
+		08DE696B6AACB74870E02766FDDFC30C /* JPUSHService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
+		0B3BEEC846B048FC2450A39DC95B5DFB /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		0D4C434A80FFC3E24BCCF95F9FFE2CD0 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
+		0DAA8F584D3D182602E4890859E129E0 /* YYKVStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYKVStorage.h; path = YYCache/YYKVStorage.h; sourceTree = "<group>"; };
+		13E7EBB280047A75822444E7CBA61C5E /* YYCache.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYCache.xcconfig; sourceTree = "<group>"; };
+		201DC422DC671EFCF19173969C7E9EAD /* UMCCommon.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UMCCommon.xcconfig; sourceTree = "<group>"; };
+		20C297F006925A150A8FC4F3B6D60EBB /* WXApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApi.h; path = UMShare/SocialLibraries/WeChat/WechatSDK/WXApi.h; sourceTree = "<group>"; };
 		24C8CEACE7A3EED60ADE7C486259A27A /* Pods-WLThirdUtilDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WLThirdUtilDemo-dummy.m"; sourceTree = "<group>"; };
 		251A3CA9970462CEB59A8FCD64D8B899 /* Pods-WLThirdUtilDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WLThirdUtilDemo-resources.sh"; sourceTree = "<group>"; };
-		2BBCBDD166A1C107F79963405E259B80 /* UMSocialQQHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMSocialQQHandler.h; path = UMShare/SocialLibraries/QQ/UMSocialQQHandler.h; sourceTree = "<group>"; };
 		2E0B59936864A793F4E79C55690843BF /* Pods-WLThirdUtilDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WLThirdUtilDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		35B9F4595541D3574E19F3C5377F15A4 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
-		398CC7FAA668EE6F864DBC9989C5C428 /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
-		486648AACD393CC9869554823D36BB46 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
-		5EA4939617A5D20679D5790EABA018A9 /* WXApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApi.h; path = UMShare/SocialLibraries/WeChat/WechatSDK/WXApi.h; sourceTree = "<group>"; };
-		5EC9C1A5CC05AE37EDDAAFAE808163E0 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		323CCA95CC76E90006D773945F2AD81E /* UMPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMPush.framework; sourceTree = "<group>"; };
+		334E1CD362AE55BC4AFA32CF374BBD97 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		36A9626029FBC7E9EEB2453AFAB33AB8 /* UMCPush.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UMCPush.xcconfig; sourceTree = "<group>"; };
+		4BFA45C2BC7FD9AE01DBBA78C7C771A9 /* UMCAnalytics.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UMCAnalytics.xcconfig; sourceTree = "<group>"; };
+		4C0AB2EF79225278A566D5EB798F0CF5 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		4C48866B77E83D84352FDEF8A13C159E /* JPush.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JPush.xcconfig; sourceTree = "<group>"; };
+		52ED08BE8B3D0282D4F850A707D2B737 /* YYCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYCache.h; path = YYCache/YYCache.h; sourceTree = "<group>"; };
+		54F38D8283739BBC14EA565F96A4CE25 /* libSocialOfficialWeChat.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libSocialOfficialWeChat.a; path = UMShare/SocialLibraries/WeChat/WechatSDK/libSocialOfficialWeChat.a; sourceTree = "<group>"; };
+		5861AC4937F0FF22366D5430AD27DCD5 /* UMSocialWechatHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMSocialWechatHandler.h; path = UMShare/SocialLibraries/WeChat/UMSocialWechatHandler.h; sourceTree = "<group>"; };
+		5B77D81C3AC6A095C8E49F1332F06F1C /* YYMemoryCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYMemoryCache.m; path = YYCache/YYMemoryCache.m; sourceTree = "<group>"; };
+		5FA500B206B11B0FF6500AAD5F69FD71 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
 		6089CCB5A1ABE9D491CE39B0DC13E54E /* Pods-WLThirdUtilDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WLThirdUtilDemo.release.xcconfig"; sourceTree = "<group>"; };
-		65EB7E45DB59BE9D58ED1FAA07D217F9 /* UMCShare.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UMCShare.xcconfig; sourceTree = "<group>"; };
 		711FF046366C1925B9A919D4F3F67BED /* Pods-WLThirdUtilDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WLThirdUtilDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7AC1EDFD1D112D60A08C1294403F4B60 /* UMShare.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMShare.framework; path = UMShare/UMShare.framework; sourceTree = "<group>"; };
-		88912B277C3E98D354B0B5D186F307CB /* WXApiObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApiObject.h; path = UMShare/SocialLibraries/WeChat/WechatSDK/WXApiObject.h; sourceTree = "<group>"; };
-		8A01CB47D750277D31B7EB16BFB2EAA7 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
-		8FC2429F0C8C999A9E600249AB81E4C9 /* libSocialQQ.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libSocialQQ.a; path = UMShare/SocialLibraries/QQ/libSocialQQ.a; sourceTree = "<group>"; };
-		901A33E5C5D66B1F30A3C7C8971E3D17 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
-		93E37B562BEBD46C7F680FDE9FB678CC /* UTDID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UTDID.framework; path = thirdparties/UTDID.framework; sourceTree = "<group>"; };
-		993722C53FFCF9BAB565D5442DEDF62E /* UMCCommon.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UMCCommon.xcconfig; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A1120E93F366BD2B1FE0479DDF8748BC /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TencentOpenAPI.framework; path = UMShare/SocialLibraries/QQ/QQSDK/TencentOpenAPI.framework; sourceTree = "<group>"; };
-		A6DE02E473339AF0C15573147A767294 /* SecurityEnvSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SecurityEnvSDK.framework; path = thirdparties/SecurityEnvSDK.framework; sourceTree = "<group>"; };
-		A6E1BB59F19697E3A9C0838E218DF039 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
-		A731E8C1FEDA0EBFD29286B5C3A064EA /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
+		7487EA9818C0FE53D72CE2A75D3D2D82 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		79BC5A5407B7AABA312BB65A16C6A88A /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		7E207C0788E8E89C7B602A25608E242B /* YYDiskCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYDiskCache.m; path = YYCache/YYDiskCache.m; sourceTree = "<group>"; };
+		88B9E53AEDE3B0605865F744452D1EE6 /* YYCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYCache.m; path = YYCache/YYCache.m; sourceTree = "<group>"; };
+		89A46DDA723E49961DB8E32D29D97B5C /* YYCache-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYCache-umbrella.h"; sourceTree = "<group>"; };
+		8D94A5E2484E99D4C507B01F8DD2B4A9 /* UMAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMAnalytics.framework; sourceTree = "<group>"; };
+		8DC0D271BF5A9542363AD631B00EDFC2 /* UMCSecurityPlugins.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UMCSecurityPlugins.xcconfig; sourceTree = "<group>"; };
+		96FB3C80579BD282B1AF2208FC5EB477 /* UShareUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UShareUI.framework; path = UMShare/UMSocialUI/UShareUI.framework; sourceTree = "<group>"; };
+		9CFF7DCF840C364F94772EB81E0E7562 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TencentOpenAPI.framework; path = UMShare/SocialLibraries/QQ/QQSDK/TencentOpenAPI.framework; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EF7C24A6DDA7DA607EF0DA8E2D1338F /* JCore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JCore.xcconfig; sourceTree = "<group>"; };
+		9F4B5336D25EF482EED1D3071F0E99DC /* libSocialWeChat.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libSocialWeChat.a; path = UMShare/SocialLibraries/WeChat/libSocialWeChat.a; sourceTree = "<group>"; };
+		A115DD53BF0C5DCE99BE919E47A0D347 /* libjcore-ios-1.2.6.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-1.2.6.a"; sourceTree = "<group>"; };
+		A33FC9EAB15D05345304026480BA74D2 /* UMCShare.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UMCShare.xcconfig; sourceTree = "<group>"; };
+		A49378A61EAEC5C5A4656197E26F2F2A /* YYKVStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYKVStorage.m; path = YYCache/YYKVStorage.m; sourceTree = "<group>"; };
+		A725922D7E008EEF474340248248A9B0 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
 		A962B094B66A91C237BB340F82BC0388 /* Pods-WLThirdUtilDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WLThirdUtilDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		AA73CEAD365CD6B8F3D2645FB8E86B76 /* UMSocialWechatHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMSocialWechatHandler.h; path = UMShare/SocialLibraries/WeChat/UMSocialWechatHandler.h; sourceTree = "<group>"; };
-		AA7B34BDFA8293C12A1B4126580A0BEF /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
-		ABC59F604EACEFE6F7C54ED0D5E4E8AC /* UMCPush.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UMCPush.xcconfig; sourceTree = "<group>"; };
-		AF00E1E6B044005FDCB9826ACAB529FF /* libSocialOfficialWeChat.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libSocialOfficialWeChat.a; path = UMShare/SocialLibraries/WeChat/WechatSDK/libSocialOfficialWeChat.a; sourceTree = "<group>"; };
-		B5D440D13532E255DD2A5A84B21E9D88 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
-		B750694578EB3846BC150B273354D6A7 /* libjpush-ios-3.1.2.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjpush-ios-3.1.2.a"; sourceTree = "<group>"; };
-		B8592385DFA0C93138A89785C3226269 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		C87BC02200248231BD0EA888BD8D57F1 /* libSVProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSVProgressHUD.a; path = libSVProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4C7C7DB24300422A131B550CCF45F1A /* WechatAuthSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WechatAuthSDK.h; path = UMShare/SocialLibraries/WeChat/WechatSDK/WechatAuthSDK.h; sourceTree = "<group>"; };
-		DF351A3BD600875902F0E8A9E65BC703 /* JPush.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JPush.xcconfig; sourceTree = "<group>"; };
-		E3A0B599F2914648738D6D0CC8B467C6 /* UMSocialSDKResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = UMSocialSDKResources.bundle; path = UMShare/UMSocialUI/UMSocialSDKResources.bundle; sourceTree = "<group>"; };
-		EF00F681738305D70EABBB11A4289B60 /* UMAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMAnalytics.framework; sourceTree = "<group>"; };
-		EF6FE99750A857AAB7ED8FC4BA424B3D /* UShareUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UShareUI.framework; path = UMShare/UMSocialUI/UShareUI.framework; sourceTree = "<group>"; };
-		EFC7CD11D0B98E3C86C399076A5BAF7B /* UMCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMCommon.framework; sourceTree = "<group>"; };
-		F1FA1571725BB7BB8DE3F3D3EFEB53B8 /* libSocialWeChat.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libSocialWeChat.a; path = UMShare/SocialLibraries/WeChat/libSocialWeChat.a; sourceTree = "<group>"; };
-		F38642DB315E44FAC9EDB3E3DAF0DDCC /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
-		FBF11315FC1455F58830F1E55C9A903A /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		AA218B36ECFC5A57D11E9A0BEB7DDAEF /* YYCache.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YYCache.modulemap; sourceTree = "<group>"; };
+		B1DBABC6D19BFBC494566DF20E51463A /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		B2939A6DD6EE47F8DEC472993FCDC121 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		BA52A2A4F1EF467BE7A3EF68553F2599 /* UMShare.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMShare.framework; path = UMShare/UMShare.framework; sourceTree = "<group>"; };
+		C526612A5B135B76B9CB104804858D17 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		C889293B6185344E13FCC61E1DC3672A /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		D1DA0F22052CE843428D34FC11C77865 /* libSVProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSVProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E12457329C1AB37AD5E932A1B540C683 /* UMSocialSDKResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = UMSocialSDKResources.bundle; path = UMShare/UMSocialUI/UMSocialSDKResources.bundle; sourceTree = "<group>"; };
+		E721F137C091049AE19E2692F2777C63 /* YYCache-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYCache-dummy.m"; sourceTree = "<group>"; };
+		E78B7AD8FCB80377D89A52B4F948B39E /* UMSocialQQHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMSocialQQHandler.h; path = UMShare/SocialLibraries/QQ/UMSocialQQHandler.h; sourceTree = "<group>"; };
+		E8BC6C104F45F9FB4F12FF516319A6DC /* YYMemoryCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYMemoryCache.h; path = YYCache/YYMemoryCache.h; sourceTree = "<group>"; };
+		EB420D74A26D814B24C389157710055F /* libPods-WLThirdUtilDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WLThirdUtilDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC53E25637456D307B7E817B98132FFD /* libWeChatSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = UMShare/SocialLibraries/WeChat/WechatSDK/libWeChatSDK.a; sourceTree = "<group>"; };
+		ED6EB4499B7CA0F4BBBC61F11E79B982 /* WXApiObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApiObject.h; path = UMShare/SocialLibraries/WeChat/WechatSDK/WXApiObject.h; sourceTree = "<group>"; };
+		EE0FFE968D00FD0D2AE0331D07901DFE /* YYCache-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYCache-prefix.pch"; sourceTree = "<group>"; };
+		EE1A462E7A48B0E3D2029E0A04E05209 /* SecurityEnvSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SecurityEnvSDK.framework; path = thirdparties/SecurityEnvSDK.framework; sourceTree = "<group>"; };
+		EFF63E348104299DE41DD3E791E4E134 /* UTDID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UTDID.framework; path = thirdparties/UTDID.framework; sourceTree = "<group>"; };
+		F621C1B50112A56E4FB1FA1FD28D3738 /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		F731BA2F05E5F3EBC93D962F48261A85 /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
+		F8236301252400B0C09015854D10BBE7 /* libYYCache.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libYYCache.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F84D0195679FE284D439C4901C47DC0B /* WechatAuthSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WechatAuthSDK.h; path = UMShare/SocialLibraries/WeChat/WechatSDK/WechatAuthSDK.h; sourceTree = "<group>"; };
+		FA1B54596975599B410B5778AE519DDF /* libjpush-ios-3.1.2.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjpush-ios-3.1.2.a"; sourceTree = "<group>"; };
+		FD6778F73A17CB1A4F9AF008BF253DFF /* YYDiskCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYDiskCache.h; path = YYCache/YYDiskCache.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		879CFFFFAB4D6503943F0436D76CB7F3 /* Frameworks */ = {
+		83665BF5DE8CE0DD659C4EC0228D6193 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -246,192 +284,186 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F34FF6D4BFF29A7D79CACF4060D50515 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1374C88FEAB8A239A37781F22AC99063 /* Pods */ = {
+		00C8A8EB8284B155F933493FB9DC3E1B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				30570183A0F2252EF91B2C2FBC7A2036 /* JCore */,
-				1CDBA83000D93F9BE7AA059BABE28171 /* JPush */,
-				F5EDFFADB48D7B2F94559F8AFEB3F35C /* SVProgressHUD */,
-				A8D8CBD2B73CC0363CA1FF952FFCC845 /* UMCAnalytics */,
-				CB886E0E33AD012A777FEC82A3E99EF7 /* UMCCommon */,
-				AA4A906C85D438995B30DA7E072FB1D4 /* UMCPush */,
-				D744AE4714D9DD8A92CB7D6B0F7BD526 /* UMCSecurityPlugins */,
-				84DF821EFDBE1D27F5058941670424FA /* UMCShare */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		15CE4AF8E7EAC09B8202573ECA3E31B1 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				993722C53FFCF9BAB565D5442DEDF62E /* UMCCommon.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/UMCCommon";
-			sourceTree = "<group>";
-		};
-		1956570CFB6616B5758AA7854151820D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A6DE02E473339AF0C15573147A767294 /* SecurityEnvSDK.framework */,
-				93E37B562BEBD46C7F680FDE9FB678CC /* UTDID.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1CDBA83000D93F9BE7AA059BABE28171 /* JPush */ = {
-			isa = PBXGroup;
-			children = (
-				0D9987C8C9EE3AFDB68A08DB2AEA8E57 /* JPUSHService.h */,
-				A31074BEE206A44E1E7C782AF4FC6A5A /* Frameworks */,
-				42E656F682EC9DD2FE5D4262D0111D1A /* Support Files */,
-			);
-			name = JPush;
-			path = JPush;
-			sourceTree = "<group>";
-		};
-		296BB112E3910C95A819EB042F203B52 /* ReducedQQ */ = {
-			isa = PBXGroup;
-			children = (
-				2BBCBDD166A1C107F79963405E259B80 /* UMSocialQQHandler.h */,
-				B83C92B6E8F55317D5AD76F3000FE255 /* Frameworks */,
-			);
-			name = ReducedQQ;
-			sourceTree = "<group>";
-		};
-		30570183A0F2252EF91B2C2FBC7A2036 /* JCore */ = {
-			isa = PBXGroup;
-			children = (
-				826A43EB4110A0C825AF2B5718B9E5F2 /* Frameworks */,
-				B7BD48EEDA904FEC3E714843BBB98DD7 /* Support Files */,
-			);
-			name = JCore;
-			path = JCore;
-			sourceTree = "<group>";
-		};
-		33B0DD77AB24F10BA47A63BC431372A9 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				65EB7E45DB59BE9D58ED1FAA07D217F9 /* UMCShare.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/UMCShare";
-			sourceTree = "<group>";
-		};
-		3DE85590AEEA7C1D03FF0F6FAA314EDE /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				4E42329ECF7F91E360248C6C59DB1152 /* Frameworks */,
-				751B87DA32BAE667077003C8BDCE180F /* Resources */,
-			);
-			name = UI;
-			sourceTree = "<group>";
-		};
-		42E656F682EC9DD2FE5D4262D0111D1A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				DF351A3BD600875902F0E8A9E65BC703 /* JPush.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/JPush";
-			sourceTree = "<group>";
-		};
-		4E42329ECF7F91E360248C6C59DB1152 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				EF6FE99750A857AAB7ED8FC4BA424B3D /* UShareUI.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		575B2CEF2253F9E6D69041CF451A4639 /* WeChat */ = {
-			isa = PBXGroup;
-			children = (
-				D4C7C7DB24300422A131B550CCF45F1A /* WechatAuthSDK.h */,
-				5EA4939617A5D20679D5790EABA018A9 /* WXApi.h */,
-				88912B277C3E98D354B0B5D186F307CB /* WXApiObject.h */,
-				DEC422422534BA6D298A9625D6B11FAE /* Frameworks */,
-			);
-			name = WeChat;
-			sourceTree = "<group>";
-		};
-		751B87DA32BAE667077003C8BDCE180F /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				E3A0B599F2914648738D6D0CC8B467C6 /* UMSocialSDKResources.bundle */,
+				C889293B6185344E13FCC61E1DC3672A /* SVProgressHUD.bundle */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		7DC9F5B2745E570A641E5F6FAEA9DF66 /* Frameworks */ = {
+		1342E9F3F1245AE784DBD87CE97BFB99 /* QQ */ = {
 			isa = PBXGroup;
 			children = (
-				EF00F681738305D70EABBB11A4289B60 /* UMAnalytics.framework */,
+				E1DA4881B5DBBD253BFF16E12CBC2E56 /* Frameworks */,
+			);
+			name = QQ;
+			sourceTree = "<group>";
+		};
+		1A16CCE7473DF76B19178E29509E0195 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA1B54596975599B410B5778AE519DDF /* libjpush-ios-3.1.2.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		826A43EB4110A0C825AF2B5718B9E5F2 /* Frameworks */ = {
+		1FE844971B0630E887FFC7D62DCF198A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0AE5E8E777337AE3A5A9ABA351BB519C /* libjcore-ios-1.2.6.a */,
+				AA218B36ECFC5A57D11E9A0BEB7DDAEF /* YYCache.modulemap */,
+				13E7EBB280047A75822444E7CBA61C5E /* YYCache.xcconfig */,
+				E721F137C091049AE19E2692F2777C63 /* YYCache-dummy.m */,
+				EE0FFE968D00FD0D2AE0331D07901DFE /* YYCache-prefix.pch */,
+				89A46DDA723E49961DB8E32D29D97B5C /* YYCache-umbrella.h */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/YYCache";
 			sourceTree = "<group>";
 		};
-		842A28D62BBD4B0A376C20F4441A4396 /* Support Files */ = {
+		22762DA38F7AC7D92A7CC68256C474A4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A731E8C1FEDA0EBFD29286B5C3A064EA /* SVProgressHUD.modulemap */,
-				8A01CB47D750277D31B7EB16BFB2EAA7 /* SVProgressHUD.xcconfig */,
-				B5D440D13532E255DD2A5A84B21E9D88 /* SVProgressHUD-dummy.m */,
-				B8592385DFA0C93138A89785C3226269 /* SVProgressHUD-prefix.pch */,
-				398CC7FAA668EE6F864DBC9989C5C428 /* SVProgressHUD-umbrella.h */,
+				F731BA2F05E5F3EBC93D962F48261A85 /* SVProgressHUD.modulemap */,
+				0D4C434A80FFC3E24BCCF95F9FFE2CD0 /* SVProgressHUD.xcconfig */,
+				0B3BEEC846B048FC2450A39DC95B5DFB /* SVProgressHUD-dummy.m */,
+				5FA500B206B11B0FF6500AAD5F69FD71 /* SVProgressHUD-prefix.pch */,
+				F621C1B50112A56E4FB1FA1FD28D3738 /* SVProgressHUD-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SVProgressHUD";
 			sourceTree = "<group>";
 		};
-		84DF821EFDBE1D27F5058941670424FA /* UMCShare */ = {
+		2C80F81FF34947B4ED02A854CFB37858 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				BC2518FA5DE2D9019EC7B8B121DF9EEA /* Core */,
-				8A7B775CF2EE620DAE6810CEF4D733B5 /* Social */,
-				33B0DD77AB24F10BA47A63BC431372A9 /* Support Files */,
-				3DE85590AEEA7C1D03FF0F6FAA314EDE /* UI */,
+				E12457329C1AB37AD5E932A1B540C683 /* UMSocialSDKResources.bundle */,
 			);
-			name = UMCShare;
-			path = UMCShare;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		86358E313240D36FB22D510E5B51B139 /* QQ */ = {
+		2C9AC55415F4C5C90E50FF4C229090C9 /* JPush */ = {
 			isa = PBXGroup;
 			children = (
-				FF594426DE0BD05693D4DE49BFBAA50A /* Frameworks */,
+				08DE696B6AACB74870E02766FDDFC30C /* JPUSHService.h */,
+				1A16CCE7473DF76B19178E29509E0195 /* Frameworks */,
+				B7EB2DF10277D839E99B5573635CA33C /* Support Files */,
 			);
-			name = QQ;
+			path = JPush;
 			sourceTree = "<group>";
 		};
-		89E2DBA6A1A83BA78C9E23D5DC191A01 /* Frameworks */ = {
+		3134AA70815C45EB51300CCE086813F1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F1FA1571725BB7BB8DE3F3D3EFEB53B8 /* libSocialWeChat.a */,
+				323CCA95CC76E90006D773945F2AD81E /* UMPush.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8A7B775CF2EE620DAE6810CEF4D733B5 /* Social */ = {
+		3225ECCAFBCDBA9E24EFAE796CE18890 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				86358E313240D36FB22D510E5B51B139 /* QQ */,
-				296BB112E3910C95A819EB042F203B52 /* ReducedQQ */,
-				9B036300EC195609DFA17D2931449593 /* ReducedWeChat */,
-				575B2CEF2253F9E6D69041CF451A4639 /* WeChat */,
+				039DFA386C50C6735FF46B4E54A8CF7D /* UMCommon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F87F5B36AF25A38FA1F05660DF24544 /* Social */ = {
+			isa = PBXGroup;
+			children = (
+				1342E9F3F1245AE784DBD87CE97BFB99 /* QQ */,
+				D48253400E072CCF330FC3589DAFD9D5 /* ReducedQQ */,
+				96973A4867E3EC6F56EBF1136BCA9CC5 /* ReducedWeChat */,
+				B90BEA6E3F09B981318F2857F2DD6B52 /* WeChat */,
 			);
 			name = Social;
+			sourceTree = "<group>";
+		};
+		422B9946F7D4F39B0B430634AC6982A8 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				334E1CD362AE55BC4AFA32CF374BBD97 /* SVIndefiniteAnimatedView.h */,
+				C526612A5B135B76B9CB104804858D17 /* SVIndefiniteAnimatedView.m */,
+				7487EA9818C0FE53D72CE2A75D3D2D82 /* SVProgressAnimatedView.h */,
+				B2939A6DD6EE47F8DEC472993FCDC121 /* SVProgressAnimatedView.m */,
+				B1DBABC6D19BFBC494566DF20E51463A /* SVProgressHUD.h */,
+				4C0AB2EF79225278A566D5EB798F0CF5 /* SVProgressHUD.m */,
+				79BC5A5407B7AABA312BB65A16C6A88A /* SVRadialGradientLayer.h */,
+				A725922D7E008EEF474340248248A9B0 /* SVRadialGradientLayer.m */,
+				00C8A8EB8284B155F933493FB9DC3E1B /* Resources */,
+				22762DA38F7AC7D92A7CC68256C474A4 /* Support Files */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		5A588D7A8CD0A364954C64753431BB56 /* UMCCommon */ = {
+			isa = PBXGroup;
+			children = (
+				3225ECCAFBCDBA9E24EFAE796CE18890 /* Frameworks */,
+				BCCE3DA4401804DB4EB84511A82B0748 /* Support Files */,
+			);
+			path = UMCCommon;
+			sourceTree = "<group>";
+		};
+		7FD53320EDD707517C41650944942D2B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8DC0D271BF5A9542363AD631B00EDFC2 /* UMCSecurityPlugins.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UMCSecurityPlugins";
+			sourceTree = "<group>";
+		};
+		81080D297C3C1FB3BBC462E37A3EB9C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01C904EBED5E8C593E22B2D579313E7B /* libSocialQQ.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		844D69EB8BE01F119C25CF1CADDDF209 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54F38D8283739BBC14EA565F96A4CE25 /* libSocialOfficialWeChat.a */,
+				EC53E25637456D307B7E817B98132FFD /* libWeChatSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84BF87762C3C8E52041026D3AA5E9C34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE1A462E7A48B0E3D2029E0A04E05209 /* SecurityEnvSDK.framework */,
+				EFF63E348104299DE41DD3E791E4E134 /* UTDID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		872E87641DA9016FF9CC2F3FEE8E276A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F4B5336D25EF482EED1D3071F0E99DC /* libSocialWeChat.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E8D490E9F6B115A48528050553E71E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A115DD53BF0C5DCE99BE919E47A0D347 /* libjcore-ios-1.2.6.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		9619078CDF4C7EDA85DDBFB6FDC333A2 /* Pods-WLThirdUtilDemo */ = {
@@ -448,56 +480,28 @@
 			path = "Target Support Files/Pods-WLThirdUtilDemo";
 			sourceTree = "<group>";
 		};
-		9B036300EC195609DFA17D2931449593 /* ReducedWeChat */ = {
+		96973A4867E3EC6F56EBF1136BCA9CC5 /* ReducedWeChat */ = {
 			isa = PBXGroup;
 			children = (
-				AA73CEAD365CD6B8F3D2645FB8E86B76 /* UMSocialWechatHandler.h */,
-				89E2DBA6A1A83BA78C9E23D5DC191A01 /* Frameworks */,
+				5861AC4937F0FF22366D5430AD27DCD5 /* UMSocialWechatHandler.h */,
+				872E87641DA9016FF9CC2F3FEE8E276A /* Frameworks */,
 			);
 			name = ReducedWeChat;
 			sourceTree = "<group>";
 		};
-		A31074BEE206A44E1E7C782AF4FC6A5A /* Frameworks */ = {
+		A843A0AF2E00261870006DD6DF59140F /* JCore */ = {
 			isa = PBXGroup;
 			children = (
-				B750694578EB3846BC150B273354D6A7 /* libjpush-ios-3.1.2.a */,
+				8E8D490E9F6B115A48528050553E71E6 /* Frameworks */,
+				E417366FBE704E27DE3679053F4245C6 /* Support Files */,
 			);
-			name = Frameworks;
+			path = JCore;
 			sourceTree = "<group>";
 		};
-		A8D8CBD2B73CC0363CA1FF952FFCC845 /* UMCAnalytics */ = {
+		AFFFEEEB28A4D006586C735DD824E9B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7DC9F5B2745E570A641E5F6FAEA9DF66 /* Frameworks */,
-				A91BAF969CF7DF383FBC332294837E6B /* Support Files */,
-			);
-			name = UMCAnalytics;
-			path = UMCAnalytics;
-			sourceTree = "<group>";
-		};
-		A91BAF969CF7DF383FBC332294837E6B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0B0DBEE062054E1399DC963CC2A01E61 /* UMCAnalytics.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/UMCAnalytics";
-			sourceTree = "<group>";
-		};
-		AA4A906C85D438995B30DA7E072FB1D4 /* UMCPush */ = {
-			isa = PBXGroup;
-			children = (
-				D7AF4B49EF8DE21C939FD84F24BE7A18 /* Frameworks */,
-				BC6B5DE454C0165A840145AB764730B7 /* Support Files */,
-			);
-			name = UMCPush;
-			path = UMCPush;
-			sourceTree = "<group>";
-		};
-		B08B6D59CAC1B4F0C884E0F672499A6A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7AC1EDFD1D112D60A08C1294403F4B60 /* UMShare.framework */,
+				BA52A2A4F1EF467BE7A3EF68553F2599 /* UMShare.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -510,74 +514,68 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		B7BD48EEDA904FEC3E714843BBB98DD7 /* Support Files */ = {
+		B7EB2DF10277D839E99B5573635CA33C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				064D4F27F53E8D70A0D9901EFD488A44 /* JCore.xcconfig */,
+				4C48866B77E83D84352FDEF8A13C159E /* JPush.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/JCore";
+			path = "../Target Support Files/JPush";
 			sourceTree = "<group>";
 		};
-		B83C92B6E8F55317D5AD76F3000FE255 /* Frameworks */ = {
+		B90BEA6E3F09B981318F2857F2DD6B52 /* WeChat */ = {
 			isa = PBXGroup;
 			children = (
-				8FC2429F0C8C999A9E600249AB81E4C9 /* libSocialQQ.a */,
+				F84D0195679FE284D439C4901C47DC0B /* WechatAuthSDK.h */,
+				20C297F006925A150A8FC4F3B6D60EBB /* WXApi.h */,
+				ED6EB4499B7CA0F4BBBC61F11E79B982 /* WXApiObject.h */,
+				844D69EB8BE01F119C25CF1CADDDF209 /* Frameworks */,
 			);
-			name = Frameworks;
+			name = WeChat;
 			sourceTree = "<group>";
 		};
-		BC156CD075913FDEE86F87DC8D8AE8D9 /* Frameworks */ = {
+		BC04076625285DCE135A2882B6B4B5A9 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EFC7CD11D0B98E3C86C399076A5BAF7B /* UMCommon.framework */,
+				4BFA45C2BC7FD9AE01DBBA78C7C771A9 /* UMCAnalytics.xcconfig */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/UMCAnalytics";
 			sourceTree = "<group>";
 		};
-		BC2518FA5DE2D9019EC7B8B121DF9EEA /* Core */ = {
+		BCCE3DA4401804DB4EB84511A82B0748 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B08B6D59CAC1B4F0C884E0F672499A6A /* Frameworks */,
+				201DC422DC671EFCF19173969C7E9EAD /* UMCCommon.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UMCCommon";
+			sourceTree = "<group>";
+		};
+		C2E47CE55B40A56141BA8229F711CD04 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AFFFEEEB28A4D006586C735DD824E9B9 /* Frameworks */,
 			);
 			name = Core;
 			sourceTree = "<group>";
 		};
-		BC6B5DE454C0165A840145AB764730B7 /* Support Files */ = {
+		C8B8DD920BB4866E4CE45704319FDE5D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ABC59F604EACEFE6F7C54ED0D5E4E8AC /* UMCPush.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/UMCPush";
-			sourceTree = "<group>";
-		};
-		BECC523630CD1F46DACAF535386DED57 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				22A5AABEC5FE85CDD0172A0166B0938E /* UMCSecurityPlugins.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/UMCSecurityPlugins";
-			sourceTree = "<group>";
-		};
-		BF7A72F60D9B9B4D5F7DDF85B20ACD06 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1BD371F629B7EB8D761DFA04F7857640 /* libPods-WLThirdUtilDemo.a */,
-				C87BC02200248231BD0EA888BD8D57F1 /* libSVProgressHUD.a */,
+				EB420D74A26D814B24C389157710055F /* libPods-WLThirdUtilDemo.a */,
+				D1DA0F22052CE843428D34FC11C77865 /* libSVProgressHUD.a */,
+				F8236301252400B0C09015854D10BBE7 /* libYYCache.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CB886E0E33AD012A777FEC82A3E99EF7 /* UMCCommon */ = {
+		CAFE2D51A9B6691855997D3F2A379859 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BC156CD075913FDEE86F87DC8D8AE8D9 /* Frameworks */,
-				15CE4AF8E7EAC09B8202573ECA3E31B1 /* Support Files */,
+				96FB3C80579BD282B1AF2208FC5EB477 /* UShareUI.framework */,
 			);
-			name = UMCCommon;
-			path = UMCCommon;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -585,28 +583,47 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
-				1374C88FEAB8A239A37781F22AC99063 /* Pods */,
-				BF7A72F60D9B9B4D5F7DDF85B20ACD06 /* Products */,
+				EE8282FD730728BF6F0889DADBE893F3 /* Pods */,
+				C8B8DD920BB4866E4CE45704319FDE5D /* Products */,
 				B3A55D894BA162F04EE901FFEE44D02F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D744AE4714D9DD8A92CB7D6B0F7BD526 /* UMCSecurityPlugins */ = {
+		CF3AB04A3C97163A24CE04FE50D6B2D2 /* UMCShare */ = {
 			isa = PBXGroup;
 			children = (
-				1956570CFB6616B5758AA7854151820D /* Frameworks */,
-				BECC523630CD1F46DACAF535386DED57 /* Support Files */,
+				C2E47CE55B40A56141BA8229F711CD04 /* Core */,
+				3F87F5B36AF25A38FA1F05660DF24544 /* Social */,
+				E5B51EAA4A14507E39F345D04DAF94EC /* Support Files */,
+				FCD6E02E50849409798FD45501399E50 /* UI */,
 			);
-			name = UMCSecurityPlugins;
-			path = UMCSecurityPlugins;
+			path = UMCShare;
 			sourceTree = "<group>";
 		};
-		D7AF4B49EF8DE21C939FD84F24BE7A18 /* Frameworks */ = {
+		D19705A71CC53C8019128C537736762A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0A408A7B87741B0E4D50D9F0FB1E5E05 /* UMPush.framework */,
+				36A9626029FBC7E9EEB2453AFAB33AB8 /* UMCPush.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UMCPush";
+			sourceTree = "<group>";
+		};
+		D3607D11C41E8CC339B0293453BF3434 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D94A5E2484E99D4C507B01F8DD2B4A9 /* UMAnalytics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D48253400E072CCF330FC3589DAFD9D5 /* ReducedQQ */ = {
+			isa = PBXGroup;
+			children = (
+				E78B7AD8FCB80377D89A52B4F948B39E /* UMSocialQQHandler.h */,
+				81080D297C3C1FB3BBC462E37A3EB9C0 /* Frameworks */,
+			);
+			name = ReducedQQ;
 			sourceTree = "<group>";
 		};
 		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
@@ -616,47 +633,98 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DEC422422534BA6D298A9625D6B11FAE /* Frameworks */ = {
+		DC835324ECE7E2304F33205A608A1FCB /* UMCSecurityPlugins */ = {
 			isa = PBXGroup;
 			children = (
-				AF00E1E6B044005FDCB9826ACAB529FF /* libSocialOfficialWeChat.a */,
-				1B33B8A4D12501BBEA1DAD9EF1FE1D13 /* libWeChatSDK.a */,
+				84BF87762C3C8E52041026D3AA5E9C34 /* Frameworks */,
+				7FD53320EDD707517C41650944942D2B /* Support Files */,
+			);
+			path = UMCSecurityPlugins;
+			sourceTree = "<group>";
+		};
+		E01A53010AD241C2288AA41CAA905EC2 /* UMCPush */ = {
+			isa = PBXGroup;
+			children = (
+				3134AA70815C45EB51300CCE086813F1 /* Frameworks */,
+				D19705A71CC53C8019128C537736762A /* Support Files */,
+			);
+			path = UMCPush;
+			sourceTree = "<group>";
+		};
+		E1DA4881B5DBBD253BFF16E12CBC2E56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CFF7DCF840C364F94772EB81E0E7562 /* TencentOpenAPI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F10BA3AC5E56084FB066342BBC8D1091 /* Resources */ = {
+		E417366FBE704E27DE3679053F4245C6 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F38642DB315E44FAC9EDB3E3DAF0DDCC /* SVProgressHUD.bundle */,
+				9EF7C24A6DDA7DA607EF0DA8E2D1338F /* JCore.xcconfig */,
 			);
-			name = Resources;
+			name = "Support Files";
+			path = "../Target Support Files/JCore";
 			sourceTree = "<group>";
 		};
-		F5EDFFADB48D7B2F94559F8AFEB3F35C /* SVProgressHUD */ = {
+		E5B51EAA4A14507E39F345D04DAF94EC /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				486648AACD393CC9869554823D36BB46 /* SVIndefiniteAnimatedView.h */,
-				AA7B34BDFA8293C12A1B4126580A0BEF /* SVIndefiniteAnimatedView.m */,
-				35B9F4595541D3574E19F3C5377F15A4 /* SVProgressAnimatedView.h */,
-				1446D6902558D786AD550B4268DF22AC /* SVProgressAnimatedView.m */,
-				901A33E5C5D66B1F30A3C7C8971E3D17 /* SVProgressHUD.h */,
-				5EC9C1A5CC05AE37EDDAAFAE808163E0 /* SVProgressHUD.m */,
-				FBF11315FC1455F58830F1E55C9A903A /* SVRadialGradientLayer.h */,
-				A6E1BB59F19697E3A9C0838E218DF039 /* SVRadialGradientLayer.m */,
-				F10BA3AC5E56084FB066342BBC8D1091 /* Resources */,
-				842A28D62BBD4B0A376C20F4441A4396 /* Support Files */,
+				A33FC9EAB15D05345304026480BA74D2 /* UMCShare.xcconfig */,
 			);
-			name = SVProgressHUD;
-			path = SVProgressHUD;
+			name = "Support Files";
+			path = "../Target Support Files/UMCShare";
 			sourceTree = "<group>";
 		};
-		FF594426DE0BD05693D4DE49BFBAA50A /* Frameworks */ = {
+		EC37CAC2B90324A99D351378709563DC /* UMCAnalytics */ = {
 			isa = PBXGroup;
 			children = (
-				A1120E93F366BD2B1FE0479DDF8748BC /* TencentOpenAPI.framework */,
+				D3607D11C41E8CC339B0293453BF3434 /* Frameworks */,
+				BC04076625285DCE135A2882B6B4B5A9 /* Support Files */,
 			);
-			name = Frameworks;
+			path = UMCAnalytics;
+			sourceTree = "<group>";
+		};
+		ED061CF6E5284A0025D10096ED52EE9A /* YYCache */ = {
+			isa = PBXGroup;
+			children = (
+				52ED08BE8B3D0282D4F850A707D2B737 /* YYCache.h */,
+				88B9E53AEDE3B0605865F744452D1EE6 /* YYCache.m */,
+				FD6778F73A17CB1A4F9AF008BF253DFF /* YYDiskCache.h */,
+				7E207C0788E8E89C7B602A25608E242B /* YYDiskCache.m */,
+				0DAA8F584D3D182602E4890859E129E0 /* YYKVStorage.h */,
+				A49378A61EAEC5C5A4656197E26F2F2A /* YYKVStorage.m */,
+				E8BC6C104F45F9FB4F12FF516319A6DC /* YYMemoryCache.h */,
+				5B77D81C3AC6A095C8E49F1332F06F1C /* YYMemoryCache.m */,
+				1FE844971B0630E887FFC7D62DCF198A /* Support Files */,
+			);
+			path = YYCache;
+			sourceTree = "<group>";
+		};
+		EE8282FD730728BF6F0889DADBE893F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A843A0AF2E00261870006DD6DF59140F /* JCore */,
+				2C9AC55415F4C5C90E50FF4C229090C9 /* JPush */,
+				422B9946F7D4F39B0B430634AC6982A8 /* SVProgressHUD */,
+				EC37CAC2B90324A99D351378709563DC /* UMCAnalytics */,
+				5A588D7A8CD0A364954C64753431BB56 /* UMCCommon */,
+				E01A53010AD241C2288AA41CAA905EC2 /* UMCPush */,
+				DC835324ECE7E2304F33205A608A1FCB /* UMCSecurityPlugins */,
+				CF3AB04A3C97163A24CE04FE50D6B2D2 /* UMCShare */,
+				ED061CF6E5284A0025D10096ED52EE9A /* YYCache */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FCD6E02E50849409798FD45501399E50 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CAFE2D51A9B6691855997D3F2A379859 /* Frameworks */,
+				2C80F81FF34947B4ED02A854CFB37858 /* Resources */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -674,7 +742,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4D3503F616B247817B4A4830DC075105 /* Headers */ = {
+		2D4B426D3E99C8E72E0BA0C086158111 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84EF6444BA188074C9597734F9D7D6B7 /* YYCache-umbrella.h in Headers */,
+				A6CB12A1C42D2D204E8F18459099FE0C /* YYCache.h in Headers */,
+				66E91E4D69A9998ACDB5CE98C56ABF12 /* YYDiskCache.h in Headers */,
+				18E6581BAB38FB7D86012A65616F2820 /* YYKVStorage.h in Headers */,
+				C9ED22B68E1BB370235EE15CDE2C1F6D /* YYMemoryCache.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A72DF4A580935474F53F20929910820 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -698,32 +778,50 @@
 			);
 			name = SVProgressHUD;
 			productName = SVProgressHUD;
-			productReference = C87BC02200248231BD0EA888BD8D57F1 /* libSVProgressHUD.a */;
+			productReference = D1DA0F22052CE843428D34FC11C77865 /* libSVProgressHUD.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		25FAFE48544C85AB3D11B6DECC357F23 /* Pods-WLThirdUtilDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A5F7DACA805AF9E1ACEEFD3D447CE78 /* Build configuration list for PBXNativeTarget "Pods-WLThirdUtilDemo" */;
+			buildConfigurationList = 215C722CDF8A7D8BE4A61147561915AC /* Build configuration list for PBXNativeTarget "Pods-WLThirdUtilDemo" */;
 			buildPhases = (
-				4D3503F616B247817B4A4830DC075105 /* Headers */,
-				33A61FB153CDDE0855B2CF4430D1306F /* Sources */,
-				879CFFFFAB4D6503943F0436D76CB7F3 /* Frameworks */,
+				6A72DF4A580935474F53F20929910820 /* Headers */,
+				C2C57F1FB9248A1DD520B95CEFA1BE59 /* Sources */,
+				F34FF6D4BFF29A7D79CACF4060D50515 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A5DCA19133EE80DF0E23EF5D6A8A4390 /* PBXTargetDependency */,
-				DE0959506DECAC773270FEF6307768A1 /* PBXTargetDependency */,
-				E932A2546C7F70D816887F77A944BF74 /* PBXTargetDependency */,
-				F672B579F41899B417B7FE73598985B4 /* PBXTargetDependency */,
-				6B79005ED732DFF60411889C41D34131 /* PBXTargetDependency */,
-				ED18A6C75E0D240329BA9F3B563EA349 /* PBXTargetDependency */,
-				90EF7F88C562377D16795AF8317C6BD8 /* PBXTargetDependency */,
-				BD5B11E46627E1A00AA27FF19BE6C0C2 /* PBXTargetDependency */,
+				9856174F08ED1D3AFF40FCF7451F5707 /* PBXTargetDependency */,
+				72EF15DA49ED903BBE04AF599F7A1FFF /* PBXTargetDependency */,
+				F3D12FCF0EA8428FD973515B01AF8011 /* PBXTargetDependency */,
+				EAA7E346F50F9B31337E61B76A7F98E3 /* PBXTargetDependency */,
+				AB0539AF68E51ADDF5FBA2F47CF96262 /* PBXTargetDependency */,
+				1F5199F618679104650AF2A02673804B /* PBXTargetDependency */,
+				6849701E5A2BF8B9632215A2996EFAEB /* PBXTargetDependency */,
+				C475320D84B07AB9B272D94A52F4B200 /* PBXTargetDependency */,
+				0514087AFB6A09957B2A24E2E5A9D6D7 /* PBXTargetDependency */,
 			);
 			name = "Pods-WLThirdUtilDemo";
 			productName = "Pods-WLThirdUtilDemo";
-			productReference = 1BD371F629B7EB8D761DFA04F7857640 /* libPods-WLThirdUtilDemo.a */;
+			productReference = EB420D74A26D814B24C389157710055F /* libPods-WLThirdUtilDemo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CFDAE6EB02F58B9A37CADCF439AE6082 /* YYCache */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA1D1768201D071C0512F8731063D406 /* Build configuration list for PBXNativeTarget "YYCache" */;
+			buildPhases = (
+				2D4B426D3E99C8E72E0BA0C086158111 /* Headers */,
+				F28ED47D54C8E10C26CDF65DCF8C9CEE /* Sources */,
+				83665BF5DE8CE0DD659C4EC0228D6193 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YYCache;
+			productName = YYCache;
+			productReference = F8236301252400B0C09015854D10BBE7 /* libYYCache.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -733,17 +831,18 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = English;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = BF7A72F60D9B9B4D5F7DDF85B20ACD06 /* Products */;
+			productRefGroup = C8B8DD920BB4866E4CE45704319FDE5D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -756,19 +855,12 @@
 				8FBAE66FA6352AB9D5094143816D813B /* UMCPush */,
 				8B5BB4D9C85FBB3B774B6C624239821A /* UMCSecurityPlugins */,
 				08797F46251C64100F721EEF64AAD344 /* UMCShare */,
+				CFDAE6EB02F58B9A37CADCF439AE6082 /* YYCache */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		33A61FB153CDDE0855B2CF4430D1306F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				64B819746405A7B28F51FC2F44DB1665 /* Pods-WLThirdUtilDemo-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B6A2757DDE9BFE43737F9C2BA44AEF9C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -781,14 +873,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C2C57F1FB9248A1DD520B95CEFA1BE59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54DB7F0E70684065A120B251A470E400 /* Pods-WLThirdUtilDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F28ED47D54C8E10C26CDF65DCF8C9CEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00FC127EF747A6378C68FBDDAD6644D6 /* YYCache-dummy.m in Sources */,
+				A4974CD2576F42EE594C58847E119954 /* YYCache.m in Sources */,
+				F6688D732A24BA192B8D2C8F63A68157 /* YYDiskCache.m in Sources */,
+				C14319CE0B0DBCAF638783BCFE39AFE6 /* YYKVStorage.m in Sources */,
+				B83BDF7C061C3A10C52C6BA35FA4C39D /* YYMemoryCache.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0514087AFB6A09957B2A24E2E5A9D6D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YYCache;
+			target = CFDAE6EB02F58B9A37CADCF439AE6082 /* YYCache */;
+			targetProxy = 0CBAF7869945B884C294F497E3D9426B /* PBXContainerItemProxy */;
+		};
 		162DDFA37DF770013E4805BDD932B37C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = UMCCommon;
 			target = 6F6B630FA5213AB083E7CEF1F986FE44 /* UMCCommon */;
 			targetProxy = 0D464E25945765A42BD9795662F99D00 /* PBXContainerItemProxy */;
+		};
+		1F5199F618679104650AF2A02673804B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UMCPush;
+			target = 8FBAE66FA6352AB9D5094143816D813B /* UMCPush */;
+			targetProxy = 90863733031A836AD605BA38A4C2FA76 /* PBXContainerItemProxy */;
 		};
 		61A7D75865C20272D53BC19298DA2A93 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -796,29 +920,35 @@
 			target = D504B99928659EA67A1C3A9E981EB8FF /* JCore */;
 			targetProxy = 5C75689EA232ACDCCE602D558874DCDC /* PBXContainerItemProxy */;
 		};
-		6B79005ED732DFF60411889C41D34131 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = UMCCommon;
-			target = 6F6B630FA5213AB083E7CEF1F986FE44 /* UMCCommon */;
-			targetProxy = 2C5E3E61715B31EAB40B6CBE4AD46A57 /* PBXContainerItemProxy */;
-		};
-		90EF7F88C562377D16795AF8317C6BD8 /* PBXTargetDependency */ = {
+		6849701E5A2BF8B9632215A2996EFAEB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = UMCSecurityPlugins;
 			target = 8B5BB4D9C85FBB3B774B6C624239821A /* UMCSecurityPlugins */;
-			targetProxy = FED58E60630461D8CC7D4C844EB3FF17 /* PBXContainerItemProxy */;
+			targetProxy = D3447CF92A19029B7832581A65782A17 /* PBXContainerItemProxy */;
 		};
-		A5DCA19133EE80DF0E23EF5D6A8A4390 /* PBXTargetDependency */ = {
+		72EF15DA49ED903BBE04AF599F7A1FFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JPush;
+			target = 5FB6AB0A09E7A2F2BE11AD6BAEFD9AED /* JPush */;
+			targetProxy = 82A4BE3DCC7A2FC4F2904572382AA9A7 /* PBXContainerItemProxy */;
+		};
+		9856174F08ED1D3AFF40FCF7451F5707 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JCore;
 			target = D504B99928659EA67A1C3A9E981EB8FF /* JCore */;
-			targetProxy = ADC58A66EE4D9730CF6990887D8DA211 /* PBXContainerItemProxy */;
+			targetProxy = 02A4ED06801B58B8D2923834BB848C85 /* PBXContainerItemProxy */;
 		};
-		BD5B11E46627E1A00AA27FF19BE6C0C2 /* PBXTargetDependency */ = {
+		AB0539AF68E51ADDF5FBA2F47CF96262 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UMCCommon;
+			target = 6F6B630FA5213AB083E7CEF1F986FE44 /* UMCCommon */;
+			targetProxy = B47C233DE3F20B5CD7002E397BF9E141 /* PBXContainerItemProxy */;
+		};
+		C475320D84B07AB9B272D94A52F4B200 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = UMCShare;
 			target = 08797F46251C64100F721EEF64AAD344 /* UMCShare */;
-			targetProxy = AF086C75ED316A18D54BE095BA04C618 /* PBXContainerItemProxy */;
+			targetProxy = EF54EB28BE33744FA8557C23266BEF02 /* PBXContainerItemProxy */;
 		};
 		D6F37A14E44787E5115BD54D5A2580C5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -832,40 +962,28 @@
 			target = 6F6B630FA5213AB083E7CEF1F986FE44 /* UMCCommon */;
 			targetProxy = 06EFA5B08CFEF9FF388D3151ED78E44E /* PBXContainerItemProxy */;
 		};
-		DE0959506DECAC773270FEF6307768A1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = JPush;
-			target = 5FB6AB0A09E7A2F2BE11AD6BAEFD9AED /* JPush */;
-			targetProxy = BCA74D4965CF1CC585C94F126D4233CA /* PBXContainerItemProxy */;
-		};
-		E932A2546C7F70D816887F77A944BF74 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SVProgressHUD;
-			target = 1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */;
-			targetProxy = 352A0AE6FD1019E9CB4EA222D80B1DE4 /* PBXContainerItemProxy */;
-		};
-		ED18A6C75E0D240329BA9F3B563EA349 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = UMCPush;
-			target = 8FBAE66FA6352AB9D5094143816D813B /* UMCPush */;
-			targetProxy = 6E897E4E62330C2C1794FCD2F7C6F993 /* PBXContainerItemProxy */;
-		};
-		F672B579F41899B417B7FE73598985B4 /* PBXTargetDependency */ = {
+		EAA7E346F50F9B31337E61B76A7F98E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = UMCAnalytics;
 			target = FD2E8643412994484A50DA7D3BFB1EFC /* UMCAnalytics */;
-			targetProxy = A158A93E6FC3B03803CD18FCFC0EE56B /* PBXContainerItemProxy */;
+			targetProxy = 2701F8D1FEC9FC45275033B7C9DA3EB3 /* PBXContainerItemProxy */;
+		};
+		F3D12FCF0EA8428FD973515B01AF8011 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = 1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */;
+			targetProxy = E73977ACC7C2C4BB3405342A83FF77A5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0849F98F0E605D509110CCF420674D27 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65EB7E45DB59BE9D58ED1FAA07D217F9 /* UMCShare.xcconfig */;
+			baseConfigurationReference = A33FC9EAB15D05345304026480BA74D2 /* UMCShare.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -877,11 +995,11 @@
 		};
 		0BB4C80E3E21465A93632E48C687BC18 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B0DBEE062054E1399DC963CC2A01E61 /* UMCAnalytics.xcconfig */;
+			baseConfigurationReference = 4BFA45C2BC7FD9AE01DBBA78C7C771A9 /* UMCAnalytics.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -893,11 +1011,11 @@
 		};
 		10E4B93F37954EBC132641842930E685 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 993722C53FFCF9BAB565D5442DEDF62E /* UMCCommon.xcconfig */;
+			baseConfigurationReference = 201DC422DC671EFCF19173969C7E9EAD /* UMCCommon.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -910,7 +1028,7 @@
 		};
 		136550562E83460CC4F522C6CC92776F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A01CB47D750277D31B7EB16BFB2EAA7 /* SVProgressHUD.xcconfig */;
+			baseConfigurationReference = 0D4C434A80FFC3E24BCCF95F9FFE2CD0 /* SVProgressHUD.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -935,16 +1053,64 @@
 		};
 		21B27A4482BDB6C4E77BC79094F7A6D1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ABC59F604EACEFE6F7C54ED0D5E4E8AC /* UMCPush.xcconfig */;
+			baseConfigurationReference = 36A9626029FBC7E9EEB2453AFAB33AB8 /* UMCPush.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A41265954ADE2DB4AEF5FB612A5A47A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13E7EBB280047A75822444E7CBA61C5E /* YYCache.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/YYCache/YYCache-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/YYCache/YYCache.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = YYCache;
+				PRODUCT_NAME = YYCache;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2AD73C24CB5A77A0D522689BAA789215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6089CCB5A1ABE9D491CE39B0DC13E54E /* Pods-WLThirdUtilDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1010,9 +1176,31 @@
 			};
 			name = Release;
 		};
+		420279ECCEF72D65828BCA3B37BD3674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E0B59936864A793F4E79C55690843BF /* Pods-WLThirdUtilDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		576F814179491CCAE3EA171A602BA68F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A01CB47D750277D31B7EB16BFB2EAA7 /* SVProgressHUD.xcconfig */;
+			baseConfigurationReference = 0D4C434A80FFC3E24BCCF95F9FFE2CD0 /* SVProgressHUD.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1100,11 +1288,11 @@
 		};
 		5CCDE57115253CA0AC013D16E1E2F725 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF351A3BD600875902F0E8A9E65BC703 /* JPush.xcconfig */;
+			baseConfigurationReference = 4C48866B77E83D84352FDEF8A13C159E /* JPush.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1117,11 +1305,11 @@
 		};
 		699D1EADF981B850E9727EA2AEE94CA2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22A5AABEC5FE85CDD0172A0166B0938E /* UMCSecurityPlugins.xcconfig */;
+			baseConfigurationReference = 8DC0D271BF5A9542363AD631B00EDFC2 /* UMCSecurityPlugins.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1132,36 +1320,13 @@
 			};
 			name = Release;
 		};
-		6DFD3BA9D07A892D9D6FB30CC7B6EFBC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6089CCB5A1ABE9D491CE39B0DC13E54E /* Pods-WLThirdUtilDemo.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		79B61A70672068C5B20F1C40B16ADB42 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B0DBEE062054E1399DC963CC2A01E61 /* UMCAnalytics.xcconfig */;
+			baseConfigurationReference = 4BFA45C2BC7FD9AE01DBBA78C7C771A9 /* UMCAnalytics.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1174,11 +1339,11 @@
 		};
 		82AF90CE5C7BC9B1682583CB00534D52 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65EB7E45DB59BE9D58ED1FAA07D217F9 /* UMCShare.xcconfig */;
+			baseConfigurationReference = A33FC9EAB15D05345304026480BA74D2 /* UMCShare.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1191,11 +1356,11 @@
 		};
 		9A57F577CDD07C34FF1C73C798765B3D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 064D4F27F53E8D70A0D9901EFD488A44 /* JCore.xcconfig */;
+			baseConfigurationReference = 9EF7C24A6DDA7DA607EF0DA8E2D1338F /* JCore.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1206,35 +1371,13 @@
 			};
 			name = Release;
 		};
-		9DEB723DC63FF01013E2B564A49DEA7E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E0B59936864A793F4E79C55690843BF /* Pods-WLThirdUtilDemo.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		A9C52DF6B0A1B304AA94E8181360B265 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF351A3BD600875902F0E8A9E65BC703 /* JPush.xcconfig */;
+			baseConfigurationReference = 4C48866B77E83D84352FDEF8A13C159E /* JPush.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1246,11 +1389,11 @@
 		};
 		CD287B7041CB75933E017D9FC80C6791 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 993722C53FFCF9BAB565D5442DEDF62E /* UMCCommon.xcconfig */;
+			baseConfigurationReference = 201DC422DC671EFCF19173969C7E9EAD /* UMCCommon.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1262,11 +1405,11 @@
 		};
 		E4EB37CC014DF10BF1FE5F27EB5C40C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22A5AABEC5FE85CDD0172A0166B0938E /* UMCSecurityPlugins.xcconfig */;
+			baseConfigurationReference = 8DC0D271BF5A9542363AD631B00EDFC2 /* UMCSecurityPlugins.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1276,13 +1419,37 @@
 			};
 			name = Debug;
 		};
+		E86D213561307B059225D2A1AAF5F161 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13E7EBB280047A75822444E7CBA61C5E /* YYCache.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/YYCache/YYCache-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/YYCache/YYCache.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = YYCache;
+				PRODUCT_NAME = YYCache;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		EE6C2372BA6F9459392BD5815C951861 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 064D4F27F53E8D70A0D9901EFD488A44 /* JCore.xcconfig */;
+			baseConfigurationReference = 9EF7C24A6DDA7DA607EF0DA8E2D1338F /* JCore.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1294,11 +1461,11 @@
 		};
 		FD0272143EACAA04808F8CAAF516BC7F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ABC59F604EACEFE6F7C54ED0D5E4E8AC /* UMCPush.xcconfig */;
+			baseConfigurationReference = 36A9626029FBC7E9EEB2453AFAB33AB8 /* UMCPush.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1329,11 +1496,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A5F7DACA805AF9E1ACEEFD3D447CE78 /* Build configuration list for PBXNativeTarget "Pods-WLThirdUtilDemo" */ = {
+		215C722CDF8A7D8BE4A61147561915AC /* Build configuration list for PBXNativeTarget "Pods-WLThirdUtilDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9DEB723DC63FF01013E2B564A49DEA7E /* Debug */,
-				6DFD3BA9D07A892D9D6FB30CC7B6EFBC /* Release */,
+				420279ECCEF72D65828BCA3B37BD3674 /* Debug */,
+				2AD73C24CB5A77A0D522689BAA789215 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1397,6 +1564,15 @@
 			buildConfigurations = (
 				0849F98F0E605D509110CCF420674D27 /* Debug */,
 				82AF90CE5C7BC9B1682583CB00534D52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA1D1768201D071C0512F8731063D406 /* Build configuration list for PBXNativeTarget "YYCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E86D213561307B059225D2A1AAF5F161 /* Debug */,
+				2A41265954ADE2DB4AEF5FB612A5A47A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

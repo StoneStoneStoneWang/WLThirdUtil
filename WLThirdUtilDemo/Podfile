@@ -20,6 +20,7 @@ pod 'UMCShare/Social/WeChat'
 
 pod 'UMCShare/Social/QQ'
 
+pod 'YYCache'
 end
 
 
