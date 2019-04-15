@@ -1,26 +1,29 @@
 platform :ios, '10.0'
 use_modular_headers!
 target 'WLThirdUtilDemo' do
-
-pod 'SVProgressHUD'
-
-pod 'JPush'
-
-pod 'UMCPush'
-
-pod 'UMCCommon'
-
-pod 'UMCSecurityPlugins'
-
-pod 'UMCAnalytics'
-
-pod 'UMCShare/UI'
-
-pod 'UMCShare/Social/WeChat'
-
-pod 'UMCShare/Social/QQ'
-
-pod 'YYCache'
+    
+    pod 'SVProgressHUD'
+    
+    pod 'JPush'
+    
+    pod 'UMCPush'
+    
+    pod 'UMCCommon'
+    
+    pod 'UMCSecurityPlugins'
+    
+    pod 'UMCAnalytics'
+    
+    pod 'UMCShare/UI'
+    
+    pod 'UMCShare/Social/WeChat'
+    
+    pod 'UMCShare/Social/QQ'
+    
+    pod 'YYCache'
+    
+    pod 'AliyunOSSiOS'
+    
 end
 
 
