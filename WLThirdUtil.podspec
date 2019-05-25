@@ -18,6 +18,8 @@ Pod::Spec.new do |spec|
   
   spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
   
+  spec.user_target_xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES' }
+  
   spec.static_framework = true
   
   spec.frameworks = 'UIKit', 'Foundation'
