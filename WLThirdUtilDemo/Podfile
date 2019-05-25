@@ -1,5 +1,8 @@
 platform :ios, '10.0'
 use_modular_headers!
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/aliyun/aliyun-specs.git'
+
 target 'WLThirdUtilDemo' do
     
     pod 'SVProgressHUD'
@@ -23,7 +26,9 @@ target 'WLThirdUtilDemo' do
     pod 'YYCache'
     
     pod 'AliyunOSSiOS'
-    
+    pod 'AMapLocation-NO-IDFA'
+    pod 'AMap2DMap-NO-IDFA'
+    pod 'AMapSearch-NO-IDFA'
 end
 
 

@@ -1,5 +1,12 @@
 PODS:
   - AliyunOSSiOS (2.10.7)
+  - AMap2DMap-NO-IDFA (5.6.1):
+    - AMapFoundation-NO-IDFA (~> 1.4)
+  - AMapFoundation-NO-IDFA (1.5.6)
+  - AMapLocation-NO-IDFA (2.6.2):
+    - AMapFoundation-NO-IDFA (~> 1.4)
+  - AMapSearch-NO-IDFA (6.6.0):
+    - AMapFoundation-NO-IDFA (~> 1.4)
   - JCore (1.2.6)
   - JPush (3.1.2):
     - JCore (~> 1.2.6)
@@ -33,6 +40,9 @@ PODS:
 
 DEPENDENCIES:
   - AliyunOSSiOS
+  - AMap2DMap-NO-IDFA
+  - AMapLocation-NO-IDFA
+  - AMapSearch-NO-IDFA
   - JPush
   - SVProgressHUD
   - UMCAnalytics
@@ -47,6 +57,10 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AliyunOSSiOS
+    - AMap2DMap-NO-IDFA
+    - AMapFoundation-NO-IDFA
+    - AMapLocation-NO-IDFA
+    - AMapSearch-NO-IDFA
     - JCore
     - JPush
     - SVProgressHUD
@@ -59,6 +73,10 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AliyunOSSiOS: 602b6a4e70e62a5f0a6431c20496343141d7e66f
+  AMap2DMap-NO-IDFA: ccecb3e2a044c17e6badb9b91c950e709368be20
+  AMapFoundation-NO-IDFA: 40d723b352992d0f95abe2976f0c0ecda3c3ffc3
+  AMapLocation-NO-IDFA: d7792c8c516f415e186f1bc25946f1a58ca6a583
+  AMapSearch-NO-IDFA: 07651afae010f7acda12beb1f2c0f45d29069e75
   JCore: cae516dd2bf1a73b578ce6e1065abd49e709e0f7
   JPush: d0cead70ba223a6a3b52749899ebda830dfbc49a
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
@@ -69,6 +87,6 @@ SPEC CHECKSUMS:
   UMCShare: 552b29753f1b4da87b51d96545ed19e6263df397
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 69bbbe1c34189ce43f984e09cb685b8d14c1f327
+PODFILE CHECKSUM: 0aa9f097a84b9679f40fe6a76296c60dd3de2fe6
 
 COCOAPODS: 1.7.0.beta.3

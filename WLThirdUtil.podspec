@@ -1,36 +1,35 @@
 
-Pod::Spec.new do |s|
+Pod::Spec.new do |spec|
   
-  s.name         = "WLThirdUtil"
-  s.version      = "0.0.5"
-  s.summary      = "A Lib For 三方的封装."
-  s.description  = <<-DESC
+  spec.name         = "WLThirdUtil"
+  spec.version      = "0.0.6"
+  spec.summary      = "A Lib For 三方的封装."
+  spec.description  = <<-DESC
   WLThirdUtil一个对三方的封装的封装
   DESC
   
-  s.homepage     = "https://github.com/StoneStoneStoneWang/WLThirdUtil"
-  s.license      = { :type => "MIT", :file => "LICENSE.md" }
-  s.author             = { "StoneStoneStoneWang" => "yuanxingfu1314@163.com" }
-  s.platform     = :ios, "10.0"
-  s.ios.deployment_target = "10.0"
+  spec.homepage     = "https://github.com/StoneStoneStoneWang/WLThirdUtil"
+  spec.license      = { :type => "MIT", :file => "LICENSE.md" }
+  spec.author             = { "StoneStoneStoneWang" => "yuanxingfu1314@163.com" }
+  spec.platform     = :ios, "10.0"
+  spec.ios.deployment_target = "10.0"
   
-  s.swift_version = '5.0'
+  spec.swift_version = '5.0'
   
-  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
+  spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
   
-  s.static_framework = true
+  spec.static_framework = true
   
-  s.frameworks = 'UIKit', 'Foundation'
+  spec.frameworks = 'UIKit', 'Foundation'
   
-  s.source = { :git => "https://github.com/StoneStoneStoneWang/WLThirdUtil.git", :tag => "#{s.version}" }
+  spec.source = { :git => "https://github.com/StoneStoneStoneWang/WLThirdUtil.git", :tag => "#{spec.version}" }
   
-  s.subspec 'JPush' do |jpush|
+  spec.subspec 'JPush' do |jpush|
     jpush.source_files = "Code/JPush/*.{h,m}"
     jpush.dependency 'JPush'
-    
   end
   
-  s.subspec 'UM' do |um|
+  spec.subspec 'UM' do |um|
     um.subspec 'Base' do |base|
       
       base.source_files = 'Code/UM/Base/*.{h,m}'
@@ -60,22 +59,26 @@ Pod::Spec.new do |s|
     end
   end
   
-  s.subspec 'Hud' do |hud|
+  spec.subspec 'Hud' do |hud|
     hud.source_files = 'Code/Hud/*.{h,m}'
     hud.dependency 'SVProgressHUD'
   end
-  s.subspec 'Cache' do |cache|
+  spec.subspec 'Cache' do |cache|
     cache.source_files = 'Code/Cahce/*.{h,m}'
     cache.dependency 'YYCache'
   end
   
-  s.subspec 'Ali' do |ali|
+  spec.subspec 'Ali' do |ali|
     ali.subspec 'ObjCache' do |objCache|
       objCache.source_files = 'Code/Ali/ObjCache/*.{h,m}'
       objCache.dependency 'AliyunOSSiOS'
     end
+    
+    ali.subspec 'AMap' do |amap|
+      amap.source_files = 'Code/Ali/AMap/*.{h,m}'
+      amap.dependency 'AMap2DMap-NO-IDFA'
+    end
   end
-  
 end
 
 

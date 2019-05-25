@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C0C14E52298C1AB002428BD /* WLAMapUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0C14E42298C1AB002428BD /* WLAMapUtil.m */; };
+		6C0C14E82298C20B002428BD /* WLAMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0C14E62298C20B002428BD /* WLAMapView.m */; };
 		6C475514226432FD0014452C /* WLAliObjCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C475513226432FD0014452C /* WLAliObjCache.m */; };
 		6C8ACFD92255D2180070F7A0 /* WLCacheUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8ACFD82255D2180070F7A0 /* WLCacheUtil.m */; };
 		6C944DD12254531100A3AFE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C944DD02254531100A3AFE6 /* AppDelegate.m */; };
@@ -47,6 +49,10 @@
 /* Begin PBXFileReference section */
 		400F368FF30865EF1B8DD93A /* Pods-WLThirdUtilDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLThirdUtilDemo.debug.xcconfig"; path = "Target Support Files/Pods-WLThirdUtilDemo/Pods-WLThirdUtilDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		6393AC925A144A54D2799BE2 /* libPods-WLThirdUtilDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WLThirdUtilDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C0C14E32298C1AB002428BD /* WLAMapUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLAMapUtil.h; sourceTree = "<group>"; };
+		6C0C14E42298C1AB002428BD /* WLAMapUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLAMapUtil.m; sourceTree = "<group>"; };
+		6C0C14E62298C20B002428BD /* WLAMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLAMapView.m; sourceTree = "<group>"; };
+		6C0C14E72298C20B002428BD /* WLAMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLAMapView.h; sourceTree = "<group>"; };
 		6C475512226432FD0014452C /* WLAliObjCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLAliObjCache.h; sourceTree = "<group>"; };
 		6C475513226432FD0014452C /* WLAliObjCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLAliObjCache.m; sourceTree = "<group>"; };
 		6C8ACFD72255D2180070F7A0 /* WLCacheUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLCacheUtil.h; sourceTree = "<group>"; };
@@ -109,9 +115,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C0C14E22298C1AB002428BD /* AMap */ = {
+			isa = PBXGroup;
+			children = (
+				6C0C14E32298C1AB002428BD /* WLAMapUtil.h */,
+				6C0C14E42298C1AB002428BD /* WLAMapUtil.m */,
+				6C0C14E72298C20B002428BD /* WLAMapView.h */,
+				6C0C14E62298C20B002428BD /* WLAMapView.m */,
+			);
+			path = AMap;
+			sourceTree = "<group>";
+		};
 		6C475510226432BA0014452C /* Ali */ = {
 			isa = PBXGroup;
 			children = (
+				6C0C14E22298C1AB002428BD /* AMap */,
 				6C475511226432BA0014452C /* ObjCache */,
 			);
 			path = Ali;
@@ -477,7 +495,9 @@
 				6C944E1D225453F700A3AFE6 /* WLUMUtil+Statistics.m in Sources */,
 				6C944E232254551F00A3AFE6 /* WLUMUtil+Share.m in Sources */,
 				6C944E142254531D00A3AFE6 /* WLJPushUtil.m in Sources */,
+				6C0C14E82298C20B002428BD /* WLAMapView.m in Sources */,
 				6C944E26225455B800A3AFE6 /* WLHudUtil.m in Sources */,
+				6C0C14E52298C1AB002428BD /* WLAMapUtil.m in Sources */,
 				6C944E1A225453D200A3AFE6 /* WLUMUtil.m in Sources */,
 				6C944DDF2254531200A3AFE6 /* main.m in Sources */,
 				6C944DD12254531100A3AFE6 /* AppDelegate.m in Sources */,
