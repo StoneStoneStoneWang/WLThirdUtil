@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WLAMapView : MAMapView
 
+@property (nonatomic ,assign) CGFloat respLeft;
 @end
 
 NS_ASSUME_NONNULL_END

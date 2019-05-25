@@ -10,4 +10,19 @@
 
 @implementation WLAMapView
 
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    
+    CGPoint convertPoint = [self convertPoint:point toView: self.window];
+    
+    if (convertPoint.x <= self.respLeft) {
+        
+        [self setScrollEnabled:false];
+    } else {
+        
+        [self setScrollEnabled:true];
+    }
+    
+    return [super hitTest:point withEvent:event];
+}
+
 @end
