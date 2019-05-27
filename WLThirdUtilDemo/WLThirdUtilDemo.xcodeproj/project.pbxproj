@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6C0C14E52298C1AB002428BD /* WLAMapUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0C14E42298C1AB002428BD /* WLAMapUtil.m */; };
 		6C0C14E82298C20B002428BD /* WLAMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0C14E62298C20B002428BD /* WLAMapView.m */; };
+		6C0C14F3229BB582002428BD /* WLLocationUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0C14F2229BB582002428BD /* WLLocationUtil.m */; };
+		6C0C14F7229BC333002428BD /* WLSearchUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0C14F6229BC333002428BD /* WLSearchUtil.m */; };
 		6C475514226432FD0014452C /* WLAliObjCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C475513226432FD0014452C /* WLAliObjCache.m */; };
 		6C8ACFD92255D2180070F7A0 /* WLCacheUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8ACFD82255D2180070F7A0 /* WLCacheUtil.m */; };
 		6C944DD12254531100A3AFE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C944DD02254531100A3AFE6 /* AppDelegate.m */; };
@@ -53,6 +55,10 @@
 		6C0C14E42298C1AB002428BD /* WLAMapUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLAMapUtil.m; sourceTree = "<group>"; };
 		6C0C14E62298C20B002428BD /* WLAMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLAMapView.m; sourceTree = "<group>"; };
 		6C0C14E72298C20B002428BD /* WLAMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLAMapView.h; sourceTree = "<group>"; };
+		6C0C14F1229BB582002428BD /* WLLocationUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLLocationUtil.h; sourceTree = "<group>"; };
+		6C0C14F2229BB582002428BD /* WLLocationUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLLocationUtil.m; sourceTree = "<group>"; };
+		6C0C14F5229BC333002428BD /* WLSearchUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLSearchUtil.h; sourceTree = "<group>"; };
+		6C0C14F6229BC333002428BD /* WLSearchUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLSearchUtil.m; sourceTree = "<group>"; };
 		6C475512226432FD0014452C /* WLAliObjCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLAliObjCache.h; sourceTree = "<group>"; };
 		6C475513226432FD0014452C /* WLAliObjCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLAliObjCache.m; sourceTree = "<group>"; };
 		6C8ACFD72255D2180070F7A0 /* WLCacheUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLCacheUtil.h; sourceTree = "<group>"; };
@@ -126,9 +132,29 @@
 			path = AMap;
 			sourceTree = "<group>";
 		};
+		6C0C14ED229BB456002428BD /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				6C0C14F1229BB582002428BD /* WLLocationUtil.h */,
+				6C0C14F2229BB582002428BD /* WLLocationUtil.m */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		6C0C14F4229BC07B002428BD /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				6C0C14F5229BC333002428BD /* WLSearchUtil.h */,
+				6C0C14F6229BC333002428BD /* WLSearchUtil.m */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		6C475510226432BA0014452C /* Ali */ = {
 			isa = PBXGroup;
 			children = (
+				6C0C14F4229BC07B002428BD /* Search */,
+				6C0C14ED229BB456002428BD /* Location */,
 				6C0C14E22298C1AB002428BD /* AMap */,
 				6C475511226432BA0014452C /* ObjCache */,
 			);
@@ -493,7 +519,9 @@
 				6C8ACFD92255D2180070F7A0 /* WLCacheUtil.m in Sources */,
 				6C475514226432FD0014452C /* WLAliObjCache.m in Sources */,
 				6C944E1D225453F700A3AFE6 /* WLUMUtil+Statistics.m in Sources */,
+				6C0C14F7229BC333002428BD /* WLSearchUtil.m in Sources */,
 				6C944E232254551F00A3AFE6 /* WLUMUtil+Share.m in Sources */,
+				6C0C14F3229BB582002428BD /* WLLocationUtil.m in Sources */,
 				6C944E142254531D00A3AFE6 /* WLJPushUtil.m in Sources */,
 				6C0C14E82298C20B002428BD /* WLAMapView.m in Sources */,
 				6C944E26225455B800A3AFE6 /* WLHudUtil.m in Sources */,

@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)shared;
 
 - (void)registerApiKey:(NSString *)apiKey;
+
 @end
 
 NS_ASSUME_NONNULL_END
