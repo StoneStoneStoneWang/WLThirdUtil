@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "WLThirdUtil"
-  spec.version      = "0.0.9"
+  spec.version      = "0.1.0"
   spec.summary      = "A Lib For 三方的封装."
   spec.description  = <<-DESC
   WLThirdUtil一个对三方的封装的封装
@@ -84,6 +84,7 @@ Pod::Spec.new do |spec|
       location.source_files = 'Code/Ali/Location/*.{h,m}'
       location.dependency 'AMapLocation-NO-IDFA'
       location.frameworks = 'CoreLocation'
+      location.dependency 'WLToolsKit/OpenUrl'
     end
     ali.subspec 'Search' do |search|
       search.source_files = 'Code/Ali/Search/*.{h,m}'
