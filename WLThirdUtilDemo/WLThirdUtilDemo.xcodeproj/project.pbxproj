@@ -11,6 +11,7 @@
 		6C0C14E82298C20B002428BD /* WLAMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0C14E62298C20B002428BD /* WLAMapView.m */; };
 		6C0C14F3229BB582002428BD /* WLLocationUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0C14F2229BB582002428BD /* WLLocationUtil.m */; };
 		6C0C14F7229BC333002428BD /* WLSearchUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0C14F6229BC333002428BD /* WLSearchUtil.m */; };
+		6C0C14FA229BFEEC002428BD /* s.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0C14F9229BFEEC002428BD /* s.swift */; };
 		6C475514226432FD0014452C /* WLAliObjCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C475513226432FD0014452C /* WLAliObjCache.m */; };
 		6C8ACFD92255D2180070F7A0 /* WLCacheUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8ACFD82255D2180070F7A0 /* WLCacheUtil.m */; };
 		6C944DD12254531100A3AFE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C944DD02254531100A3AFE6 /* AppDelegate.m */; };
@@ -59,6 +60,8 @@
 		6C0C14F2229BB582002428BD /* WLLocationUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLLocationUtil.m; sourceTree = "<group>"; };
 		6C0C14F5229BC333002428BD /* WLSearchUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLSearchUtil.h; sourceTree = "<group>"; };
 		6C0C14F6229BC333002428BD /* WLSearchUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLSearchUtil.m; sourceTree = "<group>"; };
+		6C0C14F8229BFEEC002428BD /* WLThirdUtilDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WLThirdUtilDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		6C0C14F9229BFEEC002428BD /* s.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = s.swift; sourceTree = "<group>"; };
 		6C475512226432FD0014452C /* WLAliObjCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLAliObjCache.h; sourceTree = "<group>"; };
 		6C475513226432FD0014452C /* WLAliObjCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLAliObjCache.m; sourceTree = "<group>"; };
 		6C8ACFD72255D2180070F7A0 /* WLCacheUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLCacheUtil.h; sourceTree = "<group>"; };
@@ -209,12 +212,14 @@
 				6C944DCF2254531100A3AFE6 /* AppDelegate.h */,
 				6C944DD02254531100A3AFE6 /* AppDelegate.m */,
 				6C944DD22254531100A3AFE6 /* ViewController.h */,
+				6C0C14F9229BFEEC002428BD /* s.swift */,
 				6C944DD32254531100A3AFE6 /* ViewController.m */,
 				6C944DD52254531100A3AFE6 /* Main.storyboard */,
 				6C944DD82254531200A3AFE6 /* Assets.xcassets */,
 				6C944DDA2254531200A3AFE6 /* LaunchScreen.storyboard */,
 				6C944DDD2254531200A3AFE6 /* Info.plist */,
 				6C944DDE2254531200A3AFE6 /* main.m */,
+				6C0C14F8229BFEEC002428BD /* WLThirdUtilDemo-Bridging-Header.h */,
 			);
 			path = WLThirdUtilDemo;
 			sourceTree = "<group>";
@@ -409,6 +414,12 @@
 				TargetAttributes = {
 					6C944DCB2254531100A3AFE6 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					6C944DE32254531200A3AFE6 = {
 						CreatedOnToolsVersion = 10.2;
@@ -520,6 +531,7 @@
 				6C475514226432FD0014452C /* WLAliObjCache.m in Sources */,
 				6C944E1D225453F700A3AFE6 /* WLUMUtil+Statistics.m in Sources */,
 				6C0C14F7229BC333002428BD /* WLSearchUtil.m in Sources */,
+				6C0C14FA229BFEEC002428BD /* s.swift in Sources */,
 				6C944E232254551F00A3AFE6 /* WLUMUtil+Share.m in Sources */,
 				6C0C14F3229BB582002428BD /* WLLocationUtil.m in Sources */,
 				6C944E142254531D00A3AFE6 /* WLJPushUtil.m in Sources */,
@@ -701,8 +713,11 @@
 			baseConfigurationReference = 400F368FF30865EF1B8DD93A /* Pods-WLThirdUtilDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T4H6S3QZFN;
 				INFOPLIST_FILE = WLThirdUtilDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -715,9 +730,12 @@
 					"\"${PODS_ROOT}/UMCShare/UMShare/SocialLibraries/WeChat\"",
 					"\"${PODS_ROOT}/UMCShare/UMShare/SocialLibraries/WeChat/WechatSDK\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ssht.WLThirdUtilDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssht.tdsfcyhd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_OBJC_BRIDGING_HEADER = "WLThirdUtilDemo/WLThirdUtilDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -726,21 +744,27 @@
 			baseConfigurationReference = D0B3D7265C743D4B3A36BE32 /* Pods-WLThirdUtilDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T4H6S3QZFN;
 				INFOPLIST_FILE = WLThirdUtilDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ssht.WLThirdUtilDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssht.tdsfcyhd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_OBJC_BRIDGING_HEADER = "WLThirdUtilDemo/WLThirdUtilDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		6C944DFC2254531200A3AFE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WLThirdUtilDemoTests/Info.plist;
@@ -759,6 +783,7 @@
 		6C944DFD2254531200A3AFE6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WLThirdUtilDemoTests/Info.plist;
@@ -777,6 +802,7 @@
 		6C944DFF2254531200A3AFE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WLThirdUtilDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -794,6 +820,7 @@
 		6C944E002254531200A3AFE6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WLThirdUtilDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

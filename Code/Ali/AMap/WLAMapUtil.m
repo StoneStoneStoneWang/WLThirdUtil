@@ -23,5 +23,4 @@
     
     [AMapServices sharedServices].apiKey = apiKey;
 }
-
 @end

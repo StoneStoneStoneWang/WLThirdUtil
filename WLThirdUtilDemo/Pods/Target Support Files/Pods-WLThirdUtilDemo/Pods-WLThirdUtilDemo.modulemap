@@ -1,0 +1,6 @@
+module Pods_WLThirdUtilDemo {
+  umbrella header "Pods-WLThirdUtilDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

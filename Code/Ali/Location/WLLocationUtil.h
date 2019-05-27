@@ -12,6 +12,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+
+typedef void(^WLLocationResponse)(CLLocation *location);
+
+
 @interface WLLocationUtil : NSObject
 
 @property (nonatomic ,strong ,readonly) AMapLocationManager *amlocation;
@@ -22,6 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic ,assign) CLAuthorizationStatus authStatus;
 
+- (void)startLocation:(WLLocationResponse )location;
 @end
 
 NS_ASSUME_NONNULL_END

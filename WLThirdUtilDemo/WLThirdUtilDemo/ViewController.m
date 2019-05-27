@@ -7,16 +7,24 @@
 //
 
 #import "ViewController.h"
-
+#import "WLLocationUtil.h"
 @interface ViewController ()
 
+@property (nonatomic ,strong) WLLocationUtil *manager;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view
+    
+    self.manager =  [WLLocationUtil new];
+    
+    [self.manager startLocation:^(CLLocation * _Nonnull location) {
+        
+        NSLog(@"%@",location);
+    }];
 }
 
 

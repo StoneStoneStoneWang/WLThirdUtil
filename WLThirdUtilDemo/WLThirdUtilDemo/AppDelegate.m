@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "WLAMapUtil.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [[WLAMapUtil shared] registerApiKey:@"5deb6638fec2c948724920c41a0a6bc0"];
+    
     return YES;
 }
 

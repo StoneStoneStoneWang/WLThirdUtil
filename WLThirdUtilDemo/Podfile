@@ -29,6 +29,8 @@ target 'WLThirdUtilDemo' do
     pod 'AMapLocation-NO-IDFA'
     pod 'AMap2DMap-NO-IDFA'
     pod 'AMapSearch-NO-IDFA'
+    
+    pod 'WLToolsKit/OpenUrl'
 end
 
 
