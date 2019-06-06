@@ -13,6 +13,7 @@
 		6C0C14F7229BC333002428BD /* WLSearchUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0C14F6229BC333002428BD /* WLSearchUtil.m */; };
 		6C0C14FA229BFEEC002428BD /* s.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0C14F9229BFEEC002428BD /* s.swift */; };
 		6C475514226432FD0014452C /* WLAliObjCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C475513226432FD0014452C /* WLAliObjCache.m */; };
+		6C826CD922A87C9200CE3B92 /* WLUMUtil+Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C826CD822A87C9200CE3B92 /* WLUMUtil+Login.m */; };
 		6C8ACFD92255D2180070F7A0 /* WLCacheUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8ACFD82255D2180070F7A0 /* WLCacheUtil.m */; };
 		6C944DD12254531100A3AFE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C944DD02254531100A3AFE6 /* AppDelegate.m */; };
 		6C944DD42254531100A3AFE6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C944DD32254531100A3AFE6 /* ViewController.m */; };
@@ -64,6 +65,8 @@
 		6C0C14F9229BFEEC002428BD /* s.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = s.swift; sourceTree = "<group>"; };
 		6C475512226432FD0014452C /* WLAliObjCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLAliObjCache.h; sourceTree = "<group>"; };
 		6C475513226432FD0014452C /* WLAliObjCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLAliObjCache.m; sourceTree = "<group>"; };
+		6C826CD722A87C9200CE3B92 /* WLUMUtil+Login.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WLUMUtil+Login.h"; sourceTree = "<group>"; };
+		6C826CD822A87C9200CE3B92 /* WLUMUtil+Login.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WLUMUtil+Login.m"; sourceTree = "<group>"; };
 		6C8ACFD72255D2180070F7A0 /* WLCacheUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLCacheUtil.h; sourceTree = "<group>"; };
 		6C8ACFD82255D2180070F7A0 /* WLCacheUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLCacheUtil.m; sourceTree = "<group>"; };
 		6C944DCC2254531100A3AFE6 /* WLThirdUtilDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WLThirdUtilDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,6 +176,15 @@
 			path = ObjCache;
 			sourceTree = "<group>";
 		};
+		6C826CD622A87C6B00CE3B92 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6C826CD722A87C9200CE3B92 /* WLUMUtil+Login.h */,
+				6C826CD822A87C9200CE3B92 /* WLUMUtil+Login.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		6C8ACFD62255D1F20070F7A0 /* Cahce */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,6 +278,7 @@
 		6C944E032254531D00A3AFE6 /* UM */ = {
 			isa = PBXGroup;
 			children = (
+				6C826CD622A87C6B00CE3B92 /* Login */,
 				6C944E17225453B100A3AFE6 /* Base */,
 				6C944E042254531D00A3AFE6 /* Statistics */,
 				6C944E072254531D00A3AFE6 /* Push */,
@@ -528,6 +541,7 @@
 			files = (
 				6C944DD42254531100A3AFE6 /* ViewController.m in Sources */,
 				6C8ACFD92255D2180070F7A0 /* WLCacheUtil.m in Sources */,
+				6C826CD922A87C9200CE3B92 /* WLUMUtil+Login.m in Sources */,
 				6C475514226432FD0014452C /* WLAliObjCache.m in Sources */,
 				6C944E1D225453F700A3AFE6 /* WLUMUtil+Statistics.m in Sources */,
 				6C0C14F7229BC333002428BD /* WLSearchUtil.m in Sources */,

@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSString *)z_utd;
 
+- (void)setLogEnabled:(BOOL) enabled;
+
 @end
 
 NS_ASSUME_NONNULL_END

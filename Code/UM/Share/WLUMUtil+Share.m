@@ -8,6 +8,8 @@
 
 #import "WLUMUtil+Share.h"
 #import <UMShare/UMShare.h>
+#import <UShareUI/UShareUI.h>
+
 @implementation WLUMUtil (Share)
 
 - (void)setUsingHttpsWhenShareContent:(BOOL)isUsingHttp {
@@ -24,10 +26,6 @@
     [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_QQ appKey:appkey appSecret:secret redirectURL:redirectURL];
 }
 
-- (void)shareToPlatform:(NSInteger)platformType messageObject:(id)messageObject currentViewController:(id)currentViewController completion:(WLSocialRequestCompletionHandler)completion {
-    
-    [[UMSocialManager defaultManager] shareToPlatform:platformType messageObject:messageObject currentViewController:currentViewController completion:completion];
-}
 - (BOOL)handle:(NSURL *)url forSourceApplication:(NSString *)sourceApplication andAnnotation:(id)annotation{
     
     return [[UMSocialManager defaultManager] handleOpenURL:url sourceApplication:sourceApplication annotation:annotation];
@@ -37,4 +35,48 @@
     
     return [[UMSocialManager defaultManager] handleOpenURL:url options:options];
 }
+
+- (void)setPreDefinePlatforms:(NSArray *)plats {
+    
+    [UMSocialUIManager setPreDefinePlatforms:plats];
+}
+
+- (void)addCustomPlatformWithoutFilted:(NSInteger)platformType withPlatformIcon:(UIImage *)platformIcon withPlatformName:(NSString *)platformName {
+    
+    [UMSocialUIManager addCustomPlatformWithoutFilted:platformType withPlatformIcon:platformIcon withPlatformName:platformName];
+}
+
+- (void)openShareMenu:(WLSocialOpenMenuCompletionHandler)completion {
+    
+    [UMSocialUIManager showShareMenuViewInWindowWithPlatformSelectionBlock:^(UMSocialPlatformType platformType, NSDictionary *userInfo) {
+        
+        completion(platformType);
+        
+    }];
+}
+
+- (void)shareToPlatform:(NSInteger)platformType messageObject:(id)messageObject currentViewController:(id)currentViewController completion:(WLSocialRequestCompletionHandler __nullable)completion {
+    
+    [[UMSocialManager defaultManager] shareToPlatform:platformType messageObject:messageObject currentViewController:currentViewController completion:^(id result, NSError *error) {
+        
+        completion(result,error);
+    }];
+}
+
+- (id)getShareObj:(NSString *)url andTitle:(NSString *)title andDesc:(NSString *)desc andThumbImg:(UIImage *)img{
+    
+    
+    UMSocialMessageObject *messageObject = [UMSocialMessageObject messageObject];
+    //创建网页内容对象
+    UMShareWebpageObject *shareObject = [UMShareWebpageObject shareObjectWithTitle:title descr:desc thumImage:img];
+    //设置网页地址
+    shareObject.webpageUrl = url;
+    
+    //分享消息对象设置分享内容对象
+    messageObject.shareObject = shareObject;
+    
+    return messageObject;
+}
+
 @end
+

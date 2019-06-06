@@ -27,6 +27,10 @@
     if ([self checkAppKey]) [MobClick setCrashReportEnabled:enabled];
 }
 
+- (void)setLogEnabled:(BOOL) enabled{
+    
+    if ([self checkAppKey]) [UMConfigure setLogEnabled:enabled];
+}
 - (NSString *)z_utd {
     
     return [UTDevice utdid];

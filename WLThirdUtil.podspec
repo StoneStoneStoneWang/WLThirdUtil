@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "WLThirdUtil"
-  spec.version      = "0.1.2"
+  spec.version      = "0.1.3"
   spec.summary      = "A Lib For 三方的封装."
   spec.description  = <<-DESC
   WLThirdUtil一个对三方的封装的封装
@@ -52,6 +52,15 @@ Pod::Spec.new do |spec|
       share.dependency 'WLThirdUtil/UM/Base'
       share.dependency 'UMCShare/Social/WeChat'
       share.dependency 'UMCShare/Social/QQ'
+      share.dependency 'UMCShare/UI'
+    end
+    
+    um.subspec 'Login' do |login|
+      login.source_files = 'Code/UM/Login/*.{h,m}'
+      login.dependency 'WLThirdUtil/UM/Base'
+      login.dependency 'UMCShare/Social/WeChat'
+      login.dependency 'UMCShare/Social/QQ'
+      login.dependency 'UMCShare/UI'
     end
     
     um.subspec 'Push' do |push|

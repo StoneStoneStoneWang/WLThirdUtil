@@ -7,14 +7,17 @@
 //
 
 #import "WLUMUtil.h"
+@import UIKit;
+
 
 NS_ASSUME_NONNULL_BEGIN
-typedef void (^WLSocialRequestCompletionHandler)(id result,NSError *error);
+typedef void (^WLSocialRequestCompletionHandler)(id result,NSError *_Nullable error);
+
+typedef void (^WLSocialOpenMenuCompletionHandler)(NSInteger platform);
 
 typedef void(^UMSuccBlock)(void);
 
 typedef void(^UMFailBlock)(void);
-
 
 @interface WLUMUtil (Share)
 
@@ -36,10 +39,23 @@ typedef void(^UMFailBlock)(void);
  
  UMSocialPlatformType_WechatTimeLine = 2
  */
+
+- (void)setPreDefinePlatforms:(NSArray *)plats;
+
+- (void)addCustomPlatformWithoutFilted:(NSInteger)platformType
+                withPlatformIcon:(UIImage*)platformIcon
+                withPlatformName:(NSString*)platformName;
+
+- (void)openShareMenu:(WLSocialOpenMenuCompletionHandler)completion;
+
 - (void)shareToPlatform:(NSInteger)platformType
-          messageObject:(id)messageObject
-  currentViewController:(id)currentViewController
-             completion:(WLSocialRequestCompletionHandler)completion;
+          messageObject:(id __nullable)messageObject
+  currentViewController:(id __nullable)currentViewController
+             completion:(WLSocialRequestCompletionHandler __nullable)completion;
+
+- (id)getShareObj:(NSString *)url andTitle:(NSString *)title andDesc:(NSString *)desc andThumbImg:(UIImage *)img;
+
+
 @end
 
 NS_ASSUME_NONNULL_END
