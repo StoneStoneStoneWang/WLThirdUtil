@@ -34,9 +34,7 @@
     /*创建地图并添加到父view上*/
     self.mapView = [[MAMapView alloc] initWithFrame:self.view.bounds];
     self.mapView.delegate = self;
-    [self.view addSubview:self.mapView];
-    
-    
+    [self.view addSubview:self.mapView];    
 }
 
 

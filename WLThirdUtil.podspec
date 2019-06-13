@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "WLThirdUtil"
-  spec.version      = "0.1.3"
+  spec.version      = "0.1.4"
   spec.summary      = "A Lib For 三方的封装."
   spec.description  = <<-DESC
   WLThirdUtil一个对三方的封装的封装
@@ -98,6 +98,10 @@ Pod::Spec.new do |spec|
     ali.subspec 'Search' do |search|
       search.source_files = 'Code/Ali/Search/*.{h,m}'
       search.dependency 'AMapSearch-NO-IDFA'
+    end
+    ali.subspec 'RoutePlan' do |routePlan|
+      routePlan.source_files = 'Code/Ali/RoutePlan/*.{h,m}'
+      routePlan.dependency 'AMapSearch-NO-IDFA'
     end
   end
 end
