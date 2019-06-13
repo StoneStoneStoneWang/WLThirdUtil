@@ -8,9 +8,13 @@
 
 #import "ViewController.h"
 #import "WLLocationUtil.h"
-@interface ViewController ()
+#import <MAMapKit/MAMapView.h>
+
+@interface ViewController () <MAMapViewDelegate>
 
 @property (nonatomic ,strong) WLLocationUtil *manager;
+
+@property (nonatomic, strong) MAMapView *mapView;
 @end
 
 @implementation ViewController
@@ -25,6 +29,14 @@
         
         NSLog(@"%@",location);
     }];
+    
+    
+    /*创建地图并添加到父view上*/
+    self.mapView = [[MAMapView alloc] initWithFrame:self.view.bounds];
+    self.mapView.delegate = self;
+    [self.view addSubview:self.mapView];
+    
+    
 }
 
 

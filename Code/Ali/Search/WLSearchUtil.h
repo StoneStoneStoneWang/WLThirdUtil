@@ -19,7 +19,11 @@ typedef void(^WLTipSearchResponse)(NSArray<AMapTip *> *tips);
 
 - (void)onGeoSearchResp:(AMapGeoPoint *)location andResp:(WLRegeoSearchResponse) resp;
 
+/* 根据关键字来搜索POI. */
 - (void)onTipSearchRespWithKeywords:(NSString *) keywords andCity:(NSString *)city andResp:(WLTipSearchResponse) resp;
+
+/* 根据ID来搜索POI. */
+- (void)onTipSearchRespWithID:(NSString *)uid;
 
 @property (nonatomic ,strong ,readonly) AMapSearchAPI *searchApi;
 

@@ -115,6 +115,15 @@
     self.locaitonResp = location;
 }
 
+// 停止定位
+- (void)stopLocation {
+    
+    if (self.amlocation) {
+        [self.amlocation stopUpdatingLocation];
+    }
+}
+
+
 - (void)dealloc {
     
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidBecomeActiveNotification object:nil];
@@ -136,6 +145,14 @@
     }
 }
 
+// 定位错误
+- (void)amapLocationManager:(AMapLocationManager *)manager didFailWithError:(NSError *)error
+{
+    //定位错误
+    NSLog(@"%s, amapLocationManager = %@, error = %@", __func__, [manager class], error);
+}
+
+// 定位结果
 - (void)amapLocationManager:(AMapLocationManager *)manager didUpdateLocation:(CLLocation *)location {
     
     NSLog(@"%@",location);

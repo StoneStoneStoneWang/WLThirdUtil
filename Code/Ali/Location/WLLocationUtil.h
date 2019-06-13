@@ -26,7 +26,12 @@ typedef void(^WLLocationResponse)(CLLocation *location);
 
 @property (nonatomic ,assign) CLAuthorizationStatus authStatus;
 
+// 开始定位
 - (void)startLocation:(WLLocationResponse )location;
+
+// 停止定位
+- (void)stopLocation;
+
 @end
 
 NS_ASSUME_NONNULL_END
