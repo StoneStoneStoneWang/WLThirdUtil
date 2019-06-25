@@ -8,6 +8,7 @@
 
 #import "WLJShareUtil.h"
 #import "JSHAREService.h"
+#import <AdSupport/AdSupport.h>
 
 @implementation WLJShareUtil
 

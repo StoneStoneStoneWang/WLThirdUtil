@@ -35,6 +35,7 @@ Pod::Spec.new do |spec|
   spec.subspec 'JShare' do |jshare|
     jshare.source_files = "Code/JShare/*.{h,m}"
     jshare.dependency 'JShare'
+    jshare.frameworks = 'UIKit', 'Foundation' ,'AdSupport'
   end
   
   spec.subspec 'UM' do |um|
