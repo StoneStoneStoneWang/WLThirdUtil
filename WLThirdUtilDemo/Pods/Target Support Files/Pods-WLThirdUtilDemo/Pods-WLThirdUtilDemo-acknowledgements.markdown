@@ -46,6 +46,10 @@ Copyright jpush.cn
 
 Copyright jiguang.cn
 
+## JShare
+
+Copyright jiguang.cn
+
 ## SVProgressHUD
 
 MIT License

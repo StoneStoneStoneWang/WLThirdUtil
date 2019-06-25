@@ -31,6 +31,11 @@ Pod::Spec.new do |spec|
     jpush.source_files = "Code/JPush/*.{h,m}"
     jpush.dependency 'JPush'
   end
+  spec.subspec 'JShare' do |jshare|
+    jshare.source_files = "Code/JShare/*.{h,m}"
+    jshare.dependency 'JShare'
+    
+  end
   
   spec.subspec 'UM' do |um|
     um.subspec 'Base' do |base|

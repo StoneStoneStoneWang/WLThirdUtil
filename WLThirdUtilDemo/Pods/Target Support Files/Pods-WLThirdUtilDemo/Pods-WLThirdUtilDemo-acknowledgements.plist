@@ -101,6 +101,16 @@ limitations under the License.
 		</dict>
 		<dict>
 			<key>FooterText</key>
+			<string>Copyright jiguang.cn</string>
+			<key>License</key>
+			<string>Copyright</string>
+			<key>Title</key>
+			<string>JShare</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
 			<string>MIT License
 
 Copyright (c) 2011-2018 Sam Vermette, Tobias Tiemerding and contributors.

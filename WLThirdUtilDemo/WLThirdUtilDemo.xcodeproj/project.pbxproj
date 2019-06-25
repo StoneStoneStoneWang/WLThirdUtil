@@ -13,6 +13,7 @@
 		6C0C14F3229BB582002428BD /* WLLocationUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0C14F2229BB582002428BD /* WLLocationUtil.m */; };
 		6C0C14F7229BC333002428BD /* WLSearchUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0C14F6229BC333002428BD /* WLSearchUtil.m */; };
 		6C0C14FA229BFEEC002428BD /* s.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0C14F9229BFEEC002428BD /* s.swift */; };
+		6C14577D22C1CFF40050FF95 /* WLJShareUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C14577C22C1CFF40050FF95 /* WLJShareUtil.m */; };
 		6C475514226432FD0014452C /* WLAliObjCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C475513226432FD0014452C /* WLAliObjCache.m */; };
 		6C826CD922A87C9200CE3B92 /* WLUMUtil+Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C826CD822A87C9200CE3B92 /* WLUMUtil+Login.m */; };
 		6C8ACFD92255D2180070F7A0 /* WLCacheUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8ACFD82255D2180070F7A0 /* WLCacheUtil.m */; };
@@ -66,6 +67,8 @@
 		6C0C14F6229BC333002428BD /* WLSearchUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLSearchUtil.m; sourceTree = "<group>"; };
 		6C0C14F8229BFEEC002428BD /* WLThirdUtilDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WLThirdUtilDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		6C0C14F9229BFEEC002428BD /* s.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = s.swift; sourceTree = "<group>"; };
+		6C14577B22C1CFF40050FF95 /* WLJShareUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLJShareUtil.h; sourceTree = "<group>"; };
+		6C14577C22C1CFF40050FF95 /* WLJShareUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLJShareUtil.m; sourceTree = "<group>"; };
 		6C475512226432FD0014452C /* WLAliObjCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLAliObjCache.h; sourceTree = "<group>"; };
 		6C475513226432FD0014452C /* WLAliObjCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLAliObjCache.m; sourceTree = "<group>"; };
 		6C826CD722A87C9200CE3B92 /* WLUMUtil+Login.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WLUMUtil+Login.h"; sourceTree = "<group>"; };
@@ -166,6 +169,15 @@
 				6C0C14F6229BC333002428BD /* WLSearchUtil.m */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		6C14577A22C1CFD80050FF95 /* JShare */ = {
+			isa = PBXGroup;
+			children = (
+				6C14577B22C1CFF40050FF95 /* WLJShareUtil.h */,
+				6C14577C22C1CFF40050FF95 /* WLJShareUtil.m */,
+			);
+			path = JShare;
 			sourceTree = "<group>";
 		};
 		6C475510226432BA0014452C /* Ali */ = {
@@ -270,6 +282,7 @@
 		6C944E012254531D00A3AFE6 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				6C14577A22C1CFD80050FF95 /* JShare */,
 				6C475510226432BA0014452C /* Ali */,
 				6C8ACFD62255D1F20070F7A0 /* Cahce */,
 				6C944E022254531D00A3AFE6 /* QN */,
@@ -566,6 +579,7 @@
 				6C0C14E82298C20B002428BD /* WLAMapView.m in Sources */,
 				6C944E26225455B800A3AFE6 /* WLHudUtil.m in Sources */,
 				6C0C14E52298C1AB002428BD /* WLAMapUtil.m in Sources */,
+				6C14577D22C1CFF40050FF95 /* WLJShareUtil.m in Sources */,
 				6C944E1A225453D200A3AFE6 /* WLUMUtil.m in Sources */,
 				6C944DDF2254531200A3AFE6 /* main.m in Sources */,
 				6C944DD12254531100A3AFE6 /* AppDelegate.m in Sources */,
@@ -743,7 +757,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 46NJPR4G8C;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WLThirdUtilDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -774,7 +788,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 46NJPR4G8C;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WLThirdUtilDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (

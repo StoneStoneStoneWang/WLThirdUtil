@@ -31,6 +31,9 @@ target 'WLThirdUtilDemo' do
     pod 'AMapSearch-NO-IDFA'
     
     pod 'WLToolsKit/OpenUrl'
+    
+    pod 'JShare'
+    
 end
 
 

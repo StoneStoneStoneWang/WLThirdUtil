@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface WLJPushUtil : NSObject
 
 @property (nonatomic ,assign) UNNotificationPresentationOptions jp_options;
-
+//
 + (instancetype)shared;
 
 - (void)jp_setupWithOption:(NSDictionary *)launchingOption
