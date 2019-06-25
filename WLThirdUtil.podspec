@@ -23,7 +23,7 @@ Pod::Spec.new do |spec|
   
   spec.static_framework = true
   
-  spec.frameworks = 'UIKit', 'Foundation'
+  spec.frameworks = 'UIKit','Foundation'
   
   spec.source = { :git => "https://github.com/StoneStoneStoneWang/WLThirdUtil.git", :tag => "#{spec.version}" }
   
