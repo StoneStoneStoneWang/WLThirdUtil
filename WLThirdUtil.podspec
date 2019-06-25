@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "WLThirdUtil"
-  spec.version      = "0.1.7"
+  spec.version      = "0.1.8"
   spec.summary      = "A Lib For 三方的封装."
   spec.description  = <<-DESC
   WLThirdUtil一个对三方的封装的封装
