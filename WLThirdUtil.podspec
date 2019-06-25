@@ -31,85 +31,85 @@ Pod::Spec.new do |spec|
     jpush.source_files = "Code/JPush/*.{h,m}"
     jpush.dependency 'JPush'
   end
+  
   spec.subspec 'JShare' do |jshare|
     jshare.source_files = "Code/JShare/*.{h,m}"
     jshare.dependency 'JShare'
-    
   end
   
-  spec.subspec 'UM' do |um|
-    um.subspec 'Base' do |base|
-      
-      base.source_files = 'Code/UM/Base/*.{h,m}'
-      base.dependency 'UMCAnalytics'
-      base.dependency 'UMCCommon'
-      base.dependency 'UMCSecurityPlugins'
-    end
-    um.subspec 'Statistics' do |statistics|
-      
-      statistics.source_files = 'Code/UM/Statistics/*.{h,m}'
-      statistics.dependency 'WLThirdUtil/UM/Base'
-      statistics.dependency 'UMCCommon'
-      statistics.dependency 'UMCSecurityPlugins'
-    end
-    
-    um.subspec 'Share' do |share|
-      share.source_files = 'Code/UM/Share/*.{h,m}'
-      share.dependency 'WLThirdUtil/UM/Base'
-      share.dependency 'UMCShare/Social/WeChat'
-      share.dependency 'UMCShare/Social/QQ'
-      share.dependency 'UMCShare/UI'
-    end
-    
-    um.subspec 'Login' do |login|
-      login.source_files = 'Code/UM/Login/*.{h,m}'
-      login.dependency 'WLThirdUtil/UM/Base'
-      login.dependency 'UMCShare/Social/WeChat'
-      login.dependency 'UMCShare/Social/QQ'
-      login.dependency 'UMCShare/UI'
-    end
-    
-    um.subspec 'Push' do |push|
-      push.source_files = 'Code/UM/Push/*.{h,m}'
-      push.dependency 'WLThirdUtil/UM/Base'
-      push.dependency 'UMCPush'
-    end
-  end
-  
-  spec.subspec 'Hud' do |hud|
-    hud.source_files = 'Code/Hud/*.{h,m}'
-    hud.dependency 'SVProgressHUD'
-  end
-  spec.subspec 'Cache' do |cache|
-    cache.source_files = 'Code/Cahce/*.{h,m}'
-    cache.dependency 'YYCache'
-  end
-  
-  spec.subspec 'Ali' do |ali|
-    ali.subspec 'ObjCache' do |objCache|
-      objCache.source_files = 'Code/Ali/ObjCache/*.{h,m}'
-      objCache.dependency 'AliyunOSSiOS'
-    end
-    
-    ali.subspec 'AMap' do |amap|
-      amap.source_files = 'Code/Ali/AMap/*.{h,m}'
-      amap.dependency 'AMap2DMap-NO-IDFA'
-    end
-    ali.subspec 'Location' do |location|
-      location.source_files = 'Code/Ali/Location/*.{h,m}'
-      location.dependency 'AMapLocation-NO-IDFA'
-      location.frameworks = 'CoreLocation'
-      location.dependency 'WLToolsKit/OpenUrl'
-    end
-    ali.subspec 'Search' do |search|
-      search.source_files = 'Code/Ali/Search/*.{h,m}'
-      search.dependency 'AMapSearch-NO-IDFA'
-    end
-    ali.subspec 'RoutePlan' do |routePlan|
-      routePlan.source_files = 'Code/Ali/RoutePlan/*.{h,m}'
-      routePlan.dependency 'AMapSearch-NO-IDFA'
-    end
-  end
+#  spec.subspec 'UM' do |um|
+#    um.subspec 'Base' do |base|
+#      
+#      base.source_files = 'Code/UM/Base/*.{h,m}'
+#      base.dependency 'UMCAnalytics'
+#      base.dependency 'UMCCommon'
+#      base.dependency 'UMCSecurityPlugins'
+#    end
+#    um.subspec 'Statistics' do |statistics|
+#      
+#      statistics.source_files = 'Code/UM/Statistics/*.{h,m}'
+#      statistics.dependency 'WLThirdUtil/UM/Base'
+#      statistics.dependency 'UMCCommon'
+#      statistics.dependency 'UMCSecurityPlugins'
+#    end
+#    
+#    um.subspec 'Share' do |share|
+#      share.source_files = 'Code/UM/Share/*.{h,m}'
+#      share.dependency 'WLThirdUtil/UM/Base'
+#      share.dependency 'UMCShare/Social/WeChat'
+#      share.dependency 'UMCShare/Social/QQ'
+#      share.dependency 'UMCShare/UI'
+#    end
+#    
+#    um.subspec 'Login' do |login|
+#      login.source_files = 'Code/UM/Login/*.{h,m}'
+#      login.dependency 'WLThirdUtil/UM/Base'
+#      login.dependency 'UMCShare/Social/WeChat'
+#      login.dependency 'UMCShare/Social/QQ'
+#      login.dependency 'UMCShare/UI'
+#    end
+#    
+#    um.subspec 'Push' do |push|
+#      push.source_files = 'Code/UM/Push/*.{h,m}'
+#      push.dependency 'WLThirdUtil/UM/Base'
+#      push.dependency 'UMCPush'
+#    end
+#  end
+#  
+#  spec.subspec 'Hud' do |hud|
+#    hud.source_files = 'Code/Hud/*.{h,m}'
+#    hud.dependency 'SVProgressHUD'
+#  end
+#  spec.subspec 'Cache' do |cache|
+#    cache.source_files = 'Code/Cahce/*.{h,m}'
+#    cache.dependency 'YYCache'
+#  end
+#  
+#  spec.subspec 'Ali' do |ali|
+#    ali.subspec 'ObjCache' do |objCache|
+#      objCache.source_files = 'Code/Ali/ObjCache/*.{h,m}'
+#      objCache.dependency 'AliyunOSSiOS'
+#    end
+#    
+#    ali.subspec 'AMap' do |amap|
+#      amap.source_files = 'Code/Ali/AMap/*.{h,m}'
+#      amap.dependency 'AMap2DMap-NO-IDFA'
+#    end
+#    ali.subspec 'Location' do |location|
+#      location.source_files = 'Code/Ali/Location/*.{h,m}'
+#      location.dependency 'AMapLocation-NO-IDFA'
+#      location.frameworks = 'CoreLocation'
+#      location.dependency 'WLToolsKit/OpenUrl'
+#    end
+#    ali.subspec 'Search' do |search|
+#      search.source_files = 'Code/Ali/Search/*.{h,m}'
+#      search.dependency 'AMapSearch-NO-IDFA'
+#    end
+#    ali.subspec 'RoutePlan' do |routePlan|
+#      routePlan.source_files = 'Code/Ali/RoutePlan/*.{h,m}'
+#      routePlan.dependency 'AMapSearch-NO-IDFA'
+#    end
+#  end
 end
 
 

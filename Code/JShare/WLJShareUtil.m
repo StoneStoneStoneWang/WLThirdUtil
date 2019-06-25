@@ -11,7 +11,7 @@
 
 @implementation WLJShareUtil
 
-+ (BOOL)handle:(NSURL *)url options:(NSDictionary *)options {
++ (BOOL)handle:(NSURL *)url options:(NSDictionary*)options {
     
     return [JSHAREService handleOpenUrl:url];
 }
