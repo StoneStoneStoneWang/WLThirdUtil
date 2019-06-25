@@ -35,25 +35,25 @@ Pod::Spec.new do |spec|
   spec.subspec 'JShare' do |jshare|
     jshare.source_files = "Code/JShare/*.{h,m}"
     jshare.dependency 'JShare'
-    jshare.frameworks = 'UIKit', 'Foundation' ,'AdSupport'
+    jshare.frameworks = 'UIKit', 'Foundation','CoreGraphics','Security','CoreLocation','CoreFoundation'
   end
   
   spec.subspec 'UM' do |um|
     um.subspec 'Base' do |base|
-
+      
       base.source_files = 'Code/UM/Base/*.{h,m}'
       base.dependency 'UMCAnalytics'
       base.dependency 'UMCCommon'
       base.dependency 'UMCSecurityPlugins'
     end
     um.subspec 'Statistics' do |statistics|
-
+      
       statistics.source_files = 'Code/UM/Statistics/*.{h,m}'
       statistics.dependency 'WLThirdUtil/UM/Base'
       statistics.dependency 'UMCCommon'
       statistics.dependency 'UMCSecurityPlugins'
     end
-
+    
     um.subspec 'Share' do |share|
       share.source_files = 'Code/UM/Share/*.{h,m}'
       share.dependency 'WLThirdUtil/UM/Base'
@@ -61,7 +61,7 @@ Pod::Spec.new do |spec|
       share.dependency 'UMCShare/Social/QQ'
       share.dependency 'UMCShare/UI'
     end
-
+    
     um.subspec 'Login' do |login|
       login.source_files = 'Code/UM/Login/*.{h,m}'
       login.dependency 'WLThirdUtil/UM/Base'
@@ -69,14 +69,14 @@ Pod::Spec.new do |spec|
       login.dependency 'UMCShare/Social/QQ'
       login.dependency 'UMCShare/UI'
     end
-
+    
     um.subspec 'Push' do |push|
       push.source_files = 'Code/UM/Push/*.{h,m}'
       push.dependency 'WLThirdUtil/UM/Base'
       push.dependency 'UMCPush'
     end
   end
-
+  
   spec.subspec 'Hud' do |hud|
     hud.source_files = 'Code/Hud/*.{h,m}'
     hud.dependency 'SVProgressHUD'
@@ -85,13 +85,13 @@ Pod::Spec.new do |spec|
     cache.source_files = 'Code/Cahce/*.{h,m}'
     cache.dependency 'YYCache'
   end
-
+  
   spec.subspec 'Ali' do |ali|
     ali.subspec 'ObjCache' do |objCache|
       objCache.source_files = 'Code/Ali/ObjCache/*.{h,m}'
       objCache.dependency 'AliyunOSSiOS'
     end
-
+    
     ali.subspec 'AMap' do |amap|
       amap.source_files = 'Code/Ali/AMap/*.{h,m}'
       amap.dependency 'AMap2DMap-NO-IDFA'

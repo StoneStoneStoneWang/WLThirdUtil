@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 @import UIKit;
 
-typedef void (^WLJShareSocialRequestCompletionHandler)(id _Nullable result,NSError *_Nullable error);
+typedef void (^WLJShareSocialRequestCompletionHandler)(NSInteger state,id _Nullable result,NSError *_Nullable error);
 
 NS_ASSUME_NONNULL_BEGIN
 
